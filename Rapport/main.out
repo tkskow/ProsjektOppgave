@@ -3,10 +3,7 @@
 \BOOKMARK [0][-]{chapter*.3}{List of Algorithms}{}% 3
 \BOOKMARK [0][-]{section*.4}{List of Symbols}{}% 4
 \BOOKMARK [0][-]{section*.6}{List of Acronyms}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Example}{}% 6
-\BOOKMARK [1][-]{section.1.1}{First section}{chapter.1}% 7
-\BOOKMARK [2][-]{subsection.1.1.1}{First subsection with some Math symbol}{section.1.1}% 8
-\BOOKMARK [2][-]{subsection.1.1.2}{Mathematics}{section.1.1}% 9
-\BOOKMARK [2][-]{subsection.1.1.3}{Source code example}{section.1.1}% 10
-\BOOKMARK [0][-]{chapter.2}{DNS Overview}{}% 11
-\BOOKMARK [0][-]{section*.9}{References}{}% 12
+\BOOKMARK [0][-]{chapter.1}{Overview}{}% 6
+\BOOKMARK [1][-]{section.1.1}{DNS}{chapter.1}% 7
+\BOOKMARK [1][-]{section.1.2}{DNS Tunneling}{chapter.1}% 8
+\BOOKMARK [0][-]{section*.9}{References}{}% 9

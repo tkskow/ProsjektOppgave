@@ -1,10 +1,23 @@
-\chapter{DNS Overview}
-\label{chp:dns_intro}
+\chapter{Overview}
+\label{chp:overview}
+
+\section{DNS}
 
 \Gls{dns} is an important protocol for the internet. It is mostly used to translate a domain name to an IP address which the network use to route http traffic. This type of lookup receive an \texttt{'A'} record if the IP is an ipv4 address and \texttt{'AAAA'} if it's an ipv6 address. \texttt{'CNAME'} is also a much used response. it returns the correct domain name for the 'A' lookup, e.g. if you want to go to aftenposten.no, you could write ap.no the \Gls{dns} then respond with a CNAME response containing aftenposten.no which automatically trigger a new request for aftenposten.no which give an 'A' response containing the ipv4 address. There are over 30 different record types in the \Gls{dns}. Every one has their different purpose and therefore different maximum size on the payload. \Gls{dns} mostly use UDP on port 53, but could also use TCP on the same port. TCP is used when the payload is over 512 bytes or if there is a zone transfer. 
 
 \Gls{dns} is build as a hierarchical system where each level sends you along until you have reached the correct server. The internet has 13 root servers, and a lookup in the system is backwards. The easiest way to explain this is with an example. If you request \texttt{some.test.example.com} the first request will be to the root server which will look up the IP-address of the server that controls the .com domain. Next the .com server looks up who controls the example.com domain, and the example.com server finds the \Gls{dns} server of test.example.com. At last the test.example.com \Gls{dns} server returns the IP-address of some.test.example.com. Since this process takes a long time, most responses has a \Gls{ttl} which is how long the router should use the given IP-address as a response to requests for that domain.
 
+Normally a \Gls{dns} server in an enterprise does not send requests directly to the internet, but use an internal \Gls{dns} server instead. If you are the owner of the authoritative server for a domain, you can control the responses. This is what a \Gls{dns} tunnel exploits, which will be explained more in the next section. 
 
-\cite{farnham2013detecting}
+
+\section{DNS Tunneling}
+
+\Gls{dns} tunneling was first used by people who exploited that \Gls{dns} was not monitored in network you had to pay to use, e.g. hotels and cafés. It was used as an \Gls{vpn} tunnel. In later years it has been discovered that in enterprises the \Gls{dns} are not monitored as much as other traffic on the network. People has therefore figured out that it is a good way to ex filtrate data in secure networks. \Gls{dns} could also be used for a "command and control" attack, where commands are sent over \Gls{dns}.
+
+The way \Gls{dns} works it that if you control the authoritative \Gls{dns} server for a domain you can easily send commands. 
+
+
+With the increase of smartphones it has been discovered that \Gls{dns} tunneling could again be used as the it started, to use the network without having to pay for it. Carriers can not start charging for regular queries since just regular use of a the internet produces a lot of \Gls{dns} traffic. Which an user would not see and it would be hard for the carrier to explain for an user what he has been charged for. 
+
+
  
