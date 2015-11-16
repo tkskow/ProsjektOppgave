@@ -3,48 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: abstract_english.aux
 A level-1 auxiliary file: preface.aux
-A level-1 auxiliary file: example_chapter.aux
 A level-1 auxiliary file: dns_intro.aux
 The style file: alpha.bst
+I found no \citation commands---while reading file main.aux
 Database file #1: main.bib
-You've used 2 entries,
+You've used 0 entries,
             2543 wiz_defined-function locations,
-            573 strings with 4679 characters,
-and the built_in function-call counts, 707 in all, are:
-= -- 70
-> -- 27
-< -- 1
-+ -- 9
-- -- 8
-* -- 50
-:= -- 126
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 11
-chr.to.int$ -- 2
-cite$ -- 2
-duplicate$ -- 28
-empty$ -- 51
-format.name$ -- 11
-if$ -- 137
+            560 strings with 4471 characters,
+and the built_in function-call counts, 24 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 2
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 6
-pop$ -- 8
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 0
 quote$ -- 0
-skip$ -- 25
+skip$ -- 2
 stack$ -- 0
-substring$ -- 40
-swap$ -- 2
-text.length$ -- 1
-text.prefix$ -- 1
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 0
 warning$ -- 0
-while$ -- 7
-width$ -- 3
-write$ -- 27
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There was 1 error message)

@@ -1,13 +1,3 @@
-\begin{thebibliography}{NNYY}
-
-\bibitem[Far13]{farnham2013detecting}
-Greg Farnham.
-\newblock Detecting dns tunneling.
-\newblock {\em InfoSec Reading Room}, 2013.
-
-\bibitem[NNYY]{Author:year:XYZ}
-Firstname~1 Name1 and Firstname2 Name2.
-\newblock A dummy title.
-\newblock {\em A Fake Journal}, 1(1):000--000, June YYYY.
+\begin{thebibliography}{}
 
 \end{thebibliography}

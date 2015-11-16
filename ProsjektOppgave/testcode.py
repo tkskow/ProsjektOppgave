@@ -15,7 +15,7 @@ with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
 	for row in spamreader:
 		if row[0] == '9000':
-		# 	imsi = row[1]
+		# 	imsi = row[1]b
 		# 	dnsimsiWithDuplicate.append(row[1])
 		# 	if row[1] not in dnsimsi:
 		# 		dnsimsi.append(row[1])

@@ -13,7 +13,7 @@ with open('clean.csv','rb') as csvfile:
 	for row in spamreader:
 		data.append(row)
 
-	n_samples = len (data)
+	n_samples = len(data)
 	outliers_fraction = 0.25
 	clusters_separation = [0, 1, 2]
 
