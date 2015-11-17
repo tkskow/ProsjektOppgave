@@ -3,7 +3,8 @@
 \BOOKMARK [0][-]{chapter*.3}{List of Algorithms}{}% 3
 \BOOKMARK [0][-]{section*.4}{List of Symbols}{}% 4
 \BOOKMARK [0][-]{section*.6}{List of Acronyms}{}% 5
-\BOOKMARK [0][-]{chapter.1}{Overview}{}% 6
+\BOOKMARK [0][-]{chapter.1}{DNS}{}% 6
 \BOOKMARK [1][-]{section.1.1}{DNS}{chapter.1}% 7
-\BOOKMARK [1][-]{section.1.2}{DNS Tunneling}{chapter.1}% 8
-\BOOKMARK [0][-]{section*.9}{References}{}% 9
+\BOOKMARK [0][-]{chapter.2}{DNS Tunneling}{}% 8
+\BOOKMARK [1][-]{section.2.1}{DNS Tunneling}{chapter.2}% 9
+\BOOKMARK [0][-]{section*.9}{References}{}% 10

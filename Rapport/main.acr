@@ -26,7 +26,7 @@
 \glossentry{dns}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{xvii}, 
 \glsXpageXglsnumberformat{}{1}\delimN 
-\glsXpageXglsnumberformat{}{2}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{3}}}\glsgroupskip
 \glsgroupheading{N}\relax\glsresetentrylist
 \glossentry{ntnu}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{xvii}}}\glsgroupskip
@@ -37,5 +37,5 @@
 \glsgroupheading{V}\relax\glsresetentrylist
 \glossentry{vpn}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{xvii}, 
-\glsXpageXglsnumberformat{}{2}}}%
+\glsXpageXglsnumberformat{}{3}}}%
 \end{theglossary}\glossarypostamble
