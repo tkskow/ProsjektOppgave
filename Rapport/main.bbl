@@ -1,3 +1,9 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{MD88}
+
+\bibitem[MD88]{Mockapetris:1988:DDN:52324.52338}
+P.~Mockapetris and K.~J. Dunlap.
+\newblock Development of the domain name system.
+\newblock In {\em Symposium Proceedings on Communications Architectures and
+  Protocols}, SIGCOMM '88, pages 123--133, New York, NY, USA, 1988. ACM.
 
 \end{thebibliography}
