@@ -24,10 +24,10 @@ with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 			count += 1
 			if int(row[6]) > longestCallDuration:
 				longestCallDuration = int(row[6])
-			if int(row[6]) > 250:
+			if int(row[6]) > 250: #500 = 2403, 250 = 3294
 				aboveAvgDuration.append(row)
 				print row
-			elif int(row[6]) < 250:
+			elif int(row[6]) < 250: #500 = 17762, 250 = 16869
 				underAvgDuration.append(row)
 
 
@@ -40,5 +40,5 @@ with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 	# dnsimsi.sort()
 	# print len(dnsimsi), len(dnsimsiWithDuplicate)
 	avgCallDuration = callDuration/count
-	#print avgCallDuration, longestCallDuration, (callDuration - longestCallDuration)/(count-1)
+	print avgCallDuration, longestCallDuration, (callDuration - longestCallDuration)/(count-1)
 	print len(aboveAvgDuration), len(underAvgDuration)
