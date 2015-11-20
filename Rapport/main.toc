@@ -5,12 +5,12 @@
 \contentsline {chapter}{List of Figures}{ix}{section*.1}
 \contentsline {chapter}{List of Tables}{xi}{section*.2}
 \contentsline {chapter}{List of Algorithms}{xiii}{chapter*.3}
-\contentsline {chapter}{List of Symbols}{xv}{section*.4}
-\contentsline {chapter}{List of Acronyms}{xvii}{section*.6}
+\contentsline {chapter}{List of Acronyms}{xv}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}DNS}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
 \contentsline {chapter}{\chapternumberline {2}DNS Tunneling}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}DNS Tunneling}{3}{section.2.1}
 \contentsline {chapter}{\chapternumberline {3}DNS Tunneling Detection}{5}{chapter.3}
+\contentsline {subsection}{\numberline {3.0.1}Traffic analysis}{5}{subsection.3.0.1}
 \contentsline {chapter}{\chapternumberline {4}Conclusion}{7}{chapter.4}
-\contentsline {chapter}{References}{9}{section*.9}
+\contentsline {chapter}{References}{9}{section*.7}

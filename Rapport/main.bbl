@@ -1,5 +1,10 @@
 \begin{thebibliography}{MD88}
 
+\bibitem[Far13]{farnham2013detecting}
+Greg Farnham.
+\newblock Detecting dns tunneling.
+\newblock {\em InfoSec Reading Room}, 2013.
+
 \bibitem[MD88]{Mockapetris:1988:DDN:52324.52338}
 P.~Mockapetris and K.~J. Dunlap.
 \newblock Development of the domain name system.

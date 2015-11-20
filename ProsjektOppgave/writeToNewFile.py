@@ -87,4 +87,4 @@ with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 	#under500DurationDnsCalls(spamreader)
 	#over500DurationDnsCalls(spamreader)
 	#first15000DnsCalls(spamreader)
-	restOfDnsCalls(spamreader)
+	#restOfDnsCalls(spamreader)
