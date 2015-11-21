@@ -1,4 +1,4 @@
-\begin{thebibliography}{MD88}
+\begin{thebibliography}{Moc87}
 
 \bibitem[Far13]{farnham2013detecting}
 Greg Farnham.
@@ -10,5 +10,10 @@ P.~Mockapetris and K.~J. Dunlap.
 \newblock Development of the domain name system.
 \newblock In {\em Symposium Proceedings on Communications Architectures and
   Protocols}, SIGCOMM '88, pages 123--133, New York, NY, USA, 1988. ACM.
+
+\bibitem[Moc87]{mockapetris1987domain}
+Paul~V Mockapetris.
+\newblock Domain names-concepts and facilities.
+\newblock 1987.
 
 \end{thebibliography}
