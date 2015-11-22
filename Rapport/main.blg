@@ -9,46 +9,47 @@ A level-1 auxiliary file: dns_detection.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: alpha.bst
 Database file #1: main.bib
+Warning--empty journal in mockapetris1983domain
 Warning--empty journal in mockapetris1987domain
-You've used 3 entries,
+You've used 4 entries,
             2543 wiz_defined-function locations,
-            582 strings with 4923 characters,
-and the built_in function-call counts, 1100 in all, are:
-= -- 114
-> -- 35
-< -- 3
-+ -- 10
-- -- 10
-* -- 62
-:= -- 182
-add.period$ -- 10
-call.type$ -- 3
-change.case$ -- 16
-chr.to.int$ -- 3
-cite$ -- 4
-duplicate$ -- 54
-empty$ -- 83
-format.name$ -- 15
-if$ -- 231
+            585 strings with 4990 characters,
+and the built_in function-call counts, 1362 in all, are:
+= -- 139
+> -- 43
+< -- 4
++ -- 12
+- -- 12
+* -- 75
+:= -- 227
+add.period$ -- 13
+call.type$ -- 4
+change.case$ -- 21
+chr.to.int$ -- 4
+cite$ -- 6
+duplicate$ -- 68
+empty$ -- 103
+format.name$ -- 19
+if$ -- 282
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 18
-num.names$ -- 9
-pop$ -- 17
+missing$ -- 4
+newline$ -- 23
+num.names$ -- 12
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 19
+purify$ -- 25
 quote$ -- 0
-skip$ -- 48
+skip$ -- 59
 stack$ -- 0
-substring$ -- 53
+substring$ -- 60
 swap$ -- 11
-text.length$ -- 3
-text.prefix$ -- 2
+text.length$ -- 4
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 24
-warning$ -- 1
-while$ -- 10
-width$ -- 4
-write$ -- 41
-(There was 1 warning)
+type$ -- 32
+warning$ -- 2
+while$ -- 12
+width$ -- 5
+write$ -- 52
+(There were 2 warnings)

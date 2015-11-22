@@ -23,7 +23,6 @@ n_inliers = int((1. - outliers_fraction) * n_samples)
 n_outliers = int(outliers_fraction * n_samples)
 ground_truth = np.ones(n_samples, dtype=int)
 ground_truth[-n_outliers:] = 0
-print n_inliers, n_outliers, ground_truth, 
 
 # Fit the problem with varying cluster separation
 for i, offset in enumerate(clusters_separation):
@@ -32,7 +31,6 @@ for i, offset in enumerate(clusters_separation):
     X1 = 0.3 * np.random.randn(0.5 * n_inliers, 2) - offset
     X2 = 0.3 * np.random.randn(0.5 * n_inliers, 2) + offset
     X = np.r_[X1, X2]
-    print i, offset #, "XI", X1,"X2", X2,"X", X
     # Add outliers
     X = np.r_[X, np.random.uniform(low=-6, high=6, size=(n_outliers, 2))]
 

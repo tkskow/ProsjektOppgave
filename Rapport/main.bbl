@@ -11,6 +11,11 @@ P.~Mockapetris and K.~J. Dunlap.
 \newblock In {\em Symposium Proceedings on Communications Architectures and
   Protocols}, SIGCOMM '88, pages 123--133, New York, NY, USA, 1988. ACM.
 
+\bibitem[Moc83]{mockapetris1983domain}
+Paul~V Mockapetris.
+\newblock Domain names: Implementation specification.
+\newblock 1983.
+
 \bibitem[Moc87]{mockapetris1987domain}
 Paul~V Mockapetris.
 \newblock Domain names-concepts and facilities.
