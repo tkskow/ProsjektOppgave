@@ -45,7 +45,7 @@ a good compromise between the shape of the data scatter matrix and the
 risk of over-fitting the data.
 
 """
-print(__doc__)
+#print(__doc__)
 
 # Author: Virgile Fritsch <virgile.fritsch@inria.fr>
 # License: BSD 3 clause
@@ -60,6 +60,7 @@ from sklearn.datasets import load_boston
 # Get data
 X1 = load_boston()['data'][:, [8, 10]]  # two clusters
 X2 = load_boston()['data'][:, [5, 12]]  # "banana"-shaped
+print type(X1), X2
 
 # Define "classifiers" to be used
 classifiers = {
@@ -95,6 +96,7 @@ legend1_keys_list = list( legend1.keys() )
 # Plot the results (= shape of the data points cloud)
 plt.figure(1)  # two clusters
 plt.title("Outlier detection on a real data set (boston housing)")
+print X1[:, 0], X1[:, 1]
 plt.scatter(X1[:, 0], X1[:, 1], color='black')
 bbox_args = dict(boxstyle="round", fc="0.8")
 arrow_args = dict(arrowstyle="->")

@@ -45,6 +45,7 @@ def fullDataset():
 		avgCallDuration = callDuration/count
 		print avgCallDuration, longestCallDuration, (callDuration - longestCallDuration)/(count-1)
 		print len(aboveAvgDuration), len(underAvgDuration)
+		print float(len(aboveAvgDuration))/count, float(len(underAvgDuration))/count
 
 
 def first15000():
@@ -69,5 +70,5 @@ def first15000():
 
 
 
-#fullDataset()
-first15000()
+fullDataset()
+#first15000()
