@@ -9,12 +9,13 @@ from scipy import stats
 
 with open('under500DurationDnsCalls.csv','rb') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-	data = []
+	temp = []
 	for row in spamreader:
 		one = int(row[1])
 		two = int(row[2])
-		data.append([one,two])
+		temp.append([one,two])
 
+	data = np.array(temp)
 	clf = svm.OneClassSVM(kernel='linear',nu=0.16)
 	clf.fit(data)
 
