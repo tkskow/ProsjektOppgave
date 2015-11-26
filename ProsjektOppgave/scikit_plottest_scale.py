@@ -5,28 +5,31 @@ import matplotlib.font_manager
 from scipy import stats
 from sklearn.covariance import EllipticEnvelope
 from sklearn.svm import OneClassSVM
+from sklearn import preprocessing
 
 
-with open('first15000DnsCalls.csv','rb') as csvfile:
+with open('allDnsCalls.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
-    one = float(row[4])
-    two = float(row[5])
+    one = float(row[1])
+    two = float(row[2])
    
     temp.append([one,two])
 
   X1 = np.array(temp)
+  X1 = preprocessing.scale(X1)
   #X1 = np.ndarray(shape=(len(temp), 2), dtype=float, buffer=temp)
 
 with open('restOfDnsCalls.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
-    one = float(row[4])
-    two = float(row[5])
+    one = float(row[1])
+    two = float(row[2])
     temp.append([one,two])
   X2 = np.array(temp)
+  X2 = preprocessing.scale(X2)
 
 
 classifiers = {
@@ -40,11 +43,8 @@ legend1 = {}
 legend2 = {}
 
 # Learn a frontier for outlier detection with several classifiers
-start = -1000
-stop = 6000
-num = 1000
-xx1, yy1 = np.meshgrid(np.linspace(start, stop, num), np.linspace(start, stop, num))
-xx2, yy2 = np.meshgrid(np.linspace(start, stop, num), np.linspace(start, stop, num))
+xx1, yy1 = np.meshgrid(np.linspace(-5, 10, 100), np.linspace(-5, 10, 100))
+xx2, yy2 = np.meshgrid(np.linspace(-5, 10, 100), np.linspace(-5, 10, 100))
 for i, (clf_name, clf) in enumerate(classifiers.items()):
     plt.figure(1)
     clf.fit(X1)

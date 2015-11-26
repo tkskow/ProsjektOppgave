@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  22 NOV 2015 20:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  26 NOV 2015 19:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1784,18 +1784,33 @@ l.79 \include{dns_intro}
 
 
 ]) [7]
+\openout2 = `machine_learning.aux'.
+
+ (./machine_learning.tex [8
+
+
+
+]) [9]
+\openout2 = `results.aux'.
+
+ (./results.tex [10
+
+
+
+]) [11]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [8
+
+(./conclusion.tex [12
 
 
 
-]) [9] (./main.bbl [10
+]) [13] (./main.bbl [14
 
 
 ]
 bibitemlist
-) [11]
+) [15]
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1808,21 +1823,32 @@ bibitemlist
 \tf@loa=\write11
 \openout11 = `main.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 99.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 99.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
  (./main.aux (./abstract_english.aux) (./preface.aux) (./dns_intro.aux)
-(./dns_tunneling.aux) (./dns_detection.aux) (./conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 99.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 99.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9758769CF8FB284878CA27B1DCE221D8;679.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 99.
+(./dns_tunneling.aux) (./dns_detection.aux) (./machine_learning.aux)
+(./results.aux) (./conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 9758769CF8FB284878CA27B1DCE221D8;679
+(rerunfilecheck)             After:  128CF4CA48E13D98D6CD1551B3D4EED0;774.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 21692 strings out of 493304
- 317369 string characters out of 6139870
- 576863 words of memory out of 5000000
- 24538 multiletter control sequences out of 15000+600000
+ 21714 strings out of 493304
+ 317691 string characters out of 6139870
+ 576945 words of memory out of 5000000
+ 24544 multiletter control sequences out of 15000+600000
  74587 words of font info for 93 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  58i,13n,48p,1753b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1833,10 +1859,10 @@ hare/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
 mf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lms
 s17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/
 fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (27 pages, 250090 bytes).
+Output written on main.pdf (31 pages, 255330 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 263 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  17011 words of extra memory for PDF output out of 17280 (max. 10000000)
 
