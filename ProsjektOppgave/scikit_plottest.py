@@ -5,9 +5,10 @@ import matplotlib.font_manager
 from scipy import stats
 from sklearn.covariance import EllipticEnvelope
 from sklearn.svm import OneClassSVM
+import time
 
-
-with open('first15000DnsCalls.csv','rb') as csvfile:
+starttime = time.time()
+with open('allDnsCalls.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
@@ -96,4 +97,5 @@ plt.legend((legend2_values_list[0].collections[0],
 plt.ylabel("% lower status of the population")
 plt.xlabel("average number of rooms per dwelling")
 
+print time.time() - starttime
 plt.show()

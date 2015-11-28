@@ -10,6 +10,8 @@
 \BOOKMARK [0][-]{chapter.3}{DNS Tunneling Detection}{}% 10
 \BOOKMARK [1][-]{section.3.1}{Traffic analysis}{chapter.3}% 11
 \BOOKMARK [0][-]{chapter.4}{Machine Learning}{}% 12
-\BOOKMARK [0][-]{chapter.5}{Results}{}% 13
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 14
-\BOOKMARK [0][-]{section*.7}{References}{}% 15
+\BOOKMARK [1][-]{section.4.1}{The Basics}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{Anomaly Detection}{chapter.4}% 14
+\BOOKMARK [0][-]{chapter.5}{Results}{}% 15
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 16
+\BOOKMARK [0][-]{section*.7}{References}{}% 17

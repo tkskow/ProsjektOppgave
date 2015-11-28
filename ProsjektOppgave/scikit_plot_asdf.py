@@ -7,7 +7,7 @@ from sklearn import preprocessing
 
 from sklearn import svm
 from sklearn.covariance import EllipticEnvelope
-with open('smallSetToTest.csv','rb') as csvfile:
+with open('imsiOnlyOnce.csv','rb') as csvfile:
 #with open('clean.csv','rb') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
     temp = []

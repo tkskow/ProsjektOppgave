@@ -6,50 +6,52 @@ A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: dns_intro.aux
 A level-1 auxiliary file: dns_tunneling.aux
 A level-1 auxiliary file: dns_detection.aux
+A level-1 auxiliary file: machine_learning.aux
+A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: alpha.bst
 Database file #1: main.bib
 Warning--empty journal in mockapetris1983domain
 Warning--empty journal in mockapetris1987domain
-You've used 4 entries,
+You've used 5 entries,
             2543 wiz_defined-function locations,
-            585 strings with 4990 characters,
-and the built_in function-call counts, 1362 in all, are:
-= -- 139
-> -- 43
+            594 strings with 5157 characters,
+and the built_in function-call counts, 1760 in all, are:
+= -- 177
+> -- 68
 < -- 4
-+ -- 12
-- -- 12
-* -- 75
-:= -- 227
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 21
-chr.to.int$ -- 4
-cite$ -- 6
-duplicate$ -- 68
-empty$ -- 103
-format.name$ -- 19
-if$ -- 282
++ -- 21
+- -- 21
+* -- 108
+:= -- 299
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 28
+chr.to.int$ -- 5
+cite$ -- 7
+duplicate$ -- 82
+empty$ -- 128
+format.name$ -- 29
+if$ -- 359
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 23
-num.names$ -- 12
-pop$ -- 24
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 15
+pop$ -- 28
 preamble$ -- 1
-purify$ -- 25
+purify$ -- 33
 quote$ -- 0
-skip$ -- 59
+skip$ -- 70
 stack$ -- 0
-substring$ -- 60
-swap$ -- 11
+substring$ -- 73
+swap$ -- 12
 text.length$ -- 4
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 32
+type$ -- 40
 warning$ -- 2
-while$ -- 12
-width$ -- 5
-write$ -- 52
+while$ -- 16
+width$ -- 7
+write$ -- 65
 (There were 2 warnings)

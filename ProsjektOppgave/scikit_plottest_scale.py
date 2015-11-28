@@ -6,30 +6,32 @@ from scipy import stats
 from sklearn.covariance import EllipticEnvelope
 from sklearn.svm import OneClassSVM
 from sklearn import preprocessing
+import time
 
+starttime = time.time()
 
-with open('allDnsCalls.csv','rb') as csvfile:
+with open('imsiOnlyOnce.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
-    one = float(row[1])
-    two = float(row[2])
+    one = float(row[3])
+    two = float(row[3])
    
     temp.append([one,two])
 
-  X1 = np.array(temp)
-  X1 = preprocessing.scale(X1)
+  X2 = np.array(temp)
+  X1 = preprocessing.scale(X2)
   #X1 = np.ndarray(shape=(len(temp), 2), dtype=float, buffer=temp)
 
-with open('restOfDnsCalls.csv','rb') as csvfile:
-  spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-  temp = []
-  for row in spamreader:
-    one = float(row[1])
-    two = float(row[2])
-    temp.append([one,two])
-  X2 = np.array(temp)
-  X2 = preprocessing.scale(X2)
+# with open('restOfDnsCalls.csv','rb') as csvfile:
+#   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+#   temp = []
+#   for row in spamreader:
+#     one = float(row[1])
+#     two = float(row[2])
+#     temp.append([one,two])
+#   X2 = np.array(temp)
+#   X2 = preprocessing.scale(X2)
 
 
 classifiers = {
@@ -44,7 +46,7 @@ legend2 = {}
 
 # Learn a frontier for outlier detection with several classifiers
 xx1, yy1 = np.meshgrid(np.linspace(-5, 10, 100), np.linspace(-5, 10, 100))
-xx2, yy2 = np.meshgrid(np.linspace(-5, 10, 100), np.linspace(-5, 10, 100))
+xx2, yy2 = np.meshgrid(np.linspace(-1000, 6000, 1000), np.linspace(-1000, 6000, 1000))
 for i, (clf_name, clf) in enumerate(classifiers.items()):
     plt.figure(1)
     clf.fit(X1)
@@ -75,8 +77,8 @@ plt.legend((legend1_values_list[0].collections[0],
            (legend1_keys_list[0], legend1_keys_list[1], legend1_keys_list[2]),
            loc="upper center",
            prop=matplotlib.font_manager.FontProperties(size=12))
-plt.ylabel("accessibility to radial highways")
-plt.xlabel("pupil-teacher ratio by town")
+plt.ylabel("Uplink/duration [bit/s]")
+plt.xlabel("Downlink/duration [bit/s]")
 
 legend2_values_list = list( legend2.values() )
 legend2_keys_list = list( legend2.keys() )
@@ -84,8 +86,8 @@ legend2_keys_list = list( legend2.keys() )
 plt.figure(2)  # "banana" shape
 plt.title("Outlier detection on a real data set (boston housing)")
 plt.scatter(X2[:, 0], X2[:, 1], color='black')
-plt.xlim((xx2.min(), xx2.max()))
-plt.ylim((yy2.min(), yy2.max()))
+plt.xlim((-500, 1500))
+plt.ylim((-500, 1500))
 
 plt.legend((legend2_values_list[0].collections[0],
             legend2_values_list[1].collections[0],
@@ -93,7 +95,8 @@ plt.legend((legend2_values_list[0].collections[0],
            (legend2_values_list[0], legend2_values_list[1], legend2_values_list[2]),
            loc="upper center",
            prop=matplotlib.font_manager.FontProperties(size=12))
-plt.ylabel("% lower status of the population")
-plt.xlabel("average number of rooms per dwelling")
+plt.ylabel("Uplink/duration [bit/s]")
+plt.xlabel("Downlink/duration [bit/s]")
 
+print time.time() - starttime
 plt.show()

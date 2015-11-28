@@ -1,4 +1,9 @@
-\begin{thebibliography}{Moc87}
+\begin{thebibliography}{CBK09}
+
+\bibitem[CBK09]{chandola2009anomaly}
+Varun Chandola, Arindam Banerjee, and Vipin Kumar.
+\newblock Anomaly detection: A survey.
+\newblock {\em ACM computing surveys (CSUR)}, 41(3):15, 2009.
 
 \bibitem[Far13]{farnham2013detecting}
 Greg Farnham.
