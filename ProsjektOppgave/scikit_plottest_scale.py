@@ -14,8 +14,8 @@ with open('imsiOnlyOnce.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
-    one = float(row[3])
-    two = float(row[3])
+    one = float(row[4])
+    two = float(row[5])
    
     temp.append([one,two])
 
