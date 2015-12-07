@@ -190,6 +190,14 @@ def imsiOnlyOnce():
 				spamwriter.writerow(temp2)
 			
 
+def lengthOfFiles():
+	with open('allDnsCalls.csv','rb') as csvfile:
+		spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+		data = []
+		for row in spamreader:
+			data.append(row)
+
+	print len(data)
 
 with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 	spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
@@ -200,4 +208,5 @@ with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 	#first15000DnsCalls(spamreader)
 	#restOfDnsCalls(spamreader)
 	#smallSetToTest(spamreader)
-	imsiOnlyOnce()
+	#imsiOnlyOnce()
+	lengthOfFiles()

@@ -10,16 +10,18 @@ import time
 
 starttime = time.time()
 
-with open('imsiOnlyOnce.csv','rb') as csvfile:
+with open('allDnsCalls.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
-    one = float(row[4])
-    two = float(row[5])
+    one = float(row[2])
+    two = float(row[3])
    
     temp.append([one,two])
 
+  #temp.sort(key=lambda x: x[1])
   X2 = np.array(temp)
+
   X1 = preprocessing.scale(X2)
   #X1 = np.ndarray(shape=(len(temp), 2), dtype=float, buffer=temp)
 
@@ -66,7 +68,7 @@ legend1_keys_list = list( legend1.keys() )
 
 # Plot the results (= shape of the data points cloud)
 plt.figure(1)  # two clusters
-plt.title("Outlier detection on a real data set (boston housing)")
+plt.title("Outlier detection, Downlink vs duration")
 plt.scatter(X1[:, 0], X1[:, 1], color='black')
 plt.xlim((xx1.min(), xx1.max()))
 plt.ylim((yy1.min(), yy1.max()))
@@ -84,10 +86,10 @@ legend2_values_list = list( legend2.values() )
 legend2_keys_list = list( legend2.keys() )
 
 plt.figure(2)  # "banana" shape
-plt.title("Outlier detection on a real data set (boston housing)")
+plt.title("Outlier detection Downlink vs duration")
 plt.scatter(X2[:, 0], X2[:, 1], color='black')
-plt.xlim((-500, 1500))
-plt.ylim((-500, 1500))
+plt.xlim((-500, 2000))
+plt.ylim((-500, 2000))
 
 plt.legend((legend2_values_list[0].collections[0],
             legend2_values_list[1].collections[0],

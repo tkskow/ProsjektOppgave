@@ -32,10 +32,10 @@ with open('restOfDnsCalls.csv','rb') as csvfile:
 
 classifiers = {
     "Empirical Covariance": EllipticEnvelope(support_fraction=1.,
-                                             contamination=0.16),
+                                             contamination=0.05),
     "Robust Covariance (Minimum Covariance Determinant)":
-    EllipticEnvelope(contamination=0.16),
-    "OCSVM": OneClassSVM(nu=0.16, gamma=0.05)}
+    EllipticEnvelope(contamination=0.05),
+    "OCSVM": OneClassSVM(nu=0.05, gamma=0.05)}
 colors = ['m', 'g', 'b']
 legend1 = {}
 legend2 = {}

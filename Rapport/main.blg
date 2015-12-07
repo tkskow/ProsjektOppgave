@@ -13,45 +13,45 @@ The style file: alpha.bst
 Database file #1: main.bib
 Warning--empty journal in mockapetris1983domain
 Warning--empty journal in mockapetris1987domain
-You've used 5 entries,
+You've used 6 entries,
             2543 wiz_defined-function locations,
-            594 strings with 5157 characters,
-and the built_in function-call counts, 1760 in all, are:
-= -- 177
-> -- 68
+            601 strings with 5526 characters,
+and the built_in function-call counts, 2627 in all, are:
+= -- 251
+> -- 158
 < -- 4
-+ -- 21
-- -- 21
-* -- 108
-:= -- 299
-add.period$ -- 16
-call.type$ -- 5
-change.case$ -- 28
-chr.to.int$ -- 5
-cite$ -- 7
-duplicate$ -- 82
-empty$ -- 128
-format.name$ -- 29
-if$ -- 359
++ -- 56
+- -- 56
+* -- 199
+:= -- 454
+add.period$ -- 19
+call.type$ -- 6
+change.case$ -- 48
+chr.to.int$ -- 6
+cite$ -- 8
+duplicate$ -- 96
+empty$ -- 159
+format.name$ -- 64
+if$ -- 515
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 5
-newline$ -- 28
-num.names$ -- 15
-pop$ -- 28
+missing$ -- 6
+newline$ -- 34
+num.names$ -- 18
+pop$ -- 45
 preamble$ -- 1
-purify$ -- 33
+purify$ -- 54
 quote$ -- 0
-skip$ -- 70
+skip$ -- 81
 stack$ -- 0
-substring$ -- 73
-swap$ -- 12
+substring$ -- 111
+swap$ -- 13
 text.length$ -- 4
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 40
+type$ -- 48
 warning$ -- 2
-while$ -- 16
+while$ -- 21
 width$ -- 7
-write$ -- 65
+write$ -- 79
 (There were 2 warnings)

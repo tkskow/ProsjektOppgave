@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  6 DEC 2015 14:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  7 DEC 2015 16:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1666,7 +1666,7 @@ e
 ))
 \c@lstlisting=\count329
 
-<./figs/ntnu-logo.pdf, id=76, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=80, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1747,7 +1747,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<figs/namespace_example.png, id=196, 559.08875pt x 386.44376pt>
+<figs/namespace_example.png, id=204, 559.08875pt x 386.44376pt>
 File: figs/namespace_example.png Graphic file (type png)
 
 <use figs/namespace_example.png>
@@ -1792,7 +1792,7 @@ l.79 \include{dns_intro}
 
 
 ]
-<figs/anomaly_example.png, id=278, 610.28pt x 512.91624pt>
+<figs/anomaly_example.png, id=286, 610.28pt x 512.91624pt>
 File: figs/anomaly_example.png Graphic file (type png)
 
 <use figs/anomaly_example.png>
@@ -1849,15 +1849,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0FCE2EBEF39BFE1497660AD38B609E08;954.
+(rerunfilecheck)             Checksum: 7C3E3E88B0140CC6D5B7154E3243C433;1014.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 21746 strings out of 493304
- 318228 string characters out of 6139870
- 580256 words of memory out of 5000000
- 24559 multiletter control sequences out of 15000+600000
- 74919 words of font info for 97 fonts, out of 8000000 for 9000
+ 21859 strings out of 493304
+ 319897 string characters out of 6139870
+ 581375 words of memory out of 5000000
+ 24659 multiletter control sequences out of 15000+600000
+ 81236 words of font info for 103 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  58i,13n,48p,1753b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1869,10 +1869,10 @@ pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
 pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/p
 ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (31 pages, 338128 bytes).
+Output written on main.pdf (31 pages, 341584 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 500000)
- 17056 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 389 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 19624 words of extra memory for PDF output out of 20736 (max. 10000000)
 
