@@ -23,20 +23,6 @@ with open('imsiOnlyOnce.csv','rb') as csvfile:
     X1 = np.array(temp)
     X1 = preprocessing.scale(X1)
 
-    #test = preprocessing.RobustScaler()
-    #test.fit_transform(X)
-  #X1 = np.ndarray(shape=(len(temp), 2), dtype=float, buffer=temp)
-
-# with open('restOfDnsCalls.csv','rb') as csvfile:
-#     spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-#     temp = []
-#     for row in spamreader:
-#         one = int(row[1])
-#         two = int(row[2])
-#         #three = float(row[3])
-#         temp.append([one,two])
-#     X2 = np.array(temp)
-
 # Example settings
 n_samples = len(temp)
 outliers_fraction = 0.05

@@ -23,25 +23,14 @@ with open('allDnsCalls.csv','rb') as csvfile:
   X2 = np.array(temp)
 
   X1 = preprocessing.scale(X2)
-  #X1 = np.ndarray(shape=(len(temp), 2), dtype=float, buffer=temp)
-
-# with open('restOfDnsCalls.csv','rb') as csvfile:
-#   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
-#   temp = []
-#   for row in spamreader:
-#     one = float(row[1])
-#     two = float(row[2])
-#     temp.append([one,two])
-#   X2 = np.array(temp)
-#   X2 = preprocessing.scale(X2)
 
 
 classifiers = {
     "Empirical Covariance": EllipticEnvelope(support_fraction=1.,
-                                             contamination=0.16),
+                                             contamination=0.20),
     "Robust Covariance (Minimum Covariance Determinant)":
-    EllipticEnvelope(contamination=0.16),
-    "OCSVM": OneClassSVM(nu=0.16, gamma=0.05)}
+    EllipticEnvelope(contamination=0.20),
+    "OCSVM": OneClassSVM(nu=0.20, gamma=0.05)}
 colors = ['m', 'g', 'b']
 legend1 = {}
 legend2 = {}
@@ -60,6 +49,8 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
     clf.fit(X2)
     Z2 = clf.decision_function(np.c_[xx2.ravel(), yy2.ravel()])
     Z2 = Z2.reshape(xx2.shape)
+    print clf.decision_function(np.c_[xx2.ravel(), yy2.ravel()])
+    print Z2
     legend2[clf_name] = plt.contour(
         xx2, yy2, Z2, levels=[0], linewidths=2, colors=colors[i])
 
