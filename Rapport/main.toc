@@ -19,8 +19,10 @@
 \contentsline {section}{\numberline {4.3}Scikit-learn}{10}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Models}{10}{subsection.4.3.1}
 \contentsline {chapter}{\chapternumberline {5}Results}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}Scaled data vs unscaled data}{11}{section.5.1}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{13}{chapter.6}
-\contentsline {chapter}{References}{15}{section*.7}
+\contentsline {section}{\numberline {5.1}Scaled data vs unscaled data}{12}{section.5.1}
+\contentsline {section}{\numberline {5.2}Different axes}{13}{section.5.2}
+\contentsline {section}{\numberline {5.3}Different parameters}{14}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Conclusion}{15}{chapter.6}
+\contentsline {chapter}{References}{17}{section*.13}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Parser program}{17}{appendix.A}
+\contentsline {appendix}{\chapternumberline {A}Parser program}{19}{appendix.A}

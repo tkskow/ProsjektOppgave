@@ -42,3 +42,8 @@
 (indexentry :tkey (("MCD" "\\glossentry{mcd}") ) :locref "{}{10}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("DNS" "\\glossentry{dns}") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
 (indexentry :tkey (("DNS" "\\glossentry{dns}") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DNS" "\\glossentry{dns}") ) :locref "{}{11}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("OCSVM" "\\glossentry{ocsvm}") ) :locref "{}{12}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("OCSVM" "\\glossentry{ocsvm}") ) :locref "{}{12}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("DNS" "\\glossentry{dns}") ) :locref "{}{13}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("OCSVM" "\\glossentry{ocsvm}") ) :locref "{}{14}" :attr "pageglsnumberformat" ) 

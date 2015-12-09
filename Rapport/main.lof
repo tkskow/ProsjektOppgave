@@ -3,11 +3,14 @@
 \select@language {english}
 \select@language {english}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Example of name spaces of a root with MIL, EDU and ARPA as immediate subdomains. Each leaf is a domain \citep {mockapetris1987domain}.}}{2}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Example of name spaces of a root with MIL, EDU and ARPA as immediate subdomains. Each leaf is a domain \citep {mockapetris1987domain}.\relax }}{2}{figure.caption.6}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of anomalies in a 2D dataset\citep {chandola2009anomaly}.}}{10}{figure.4.1}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of anomalies in a 2D dataset\citep {chandola2009anomaly}.\relax }}{10}{figure.caption.8}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Difference between scaled and unscaled data\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Uplink vs duration of session. \relax }}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Average speed in each direction\relax }}{14}{figure.caption.11}
 \addvspace {10pt}
 \addvspace {10pt}
