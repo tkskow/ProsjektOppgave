@@ -35,63 +35,68 @@ colors = ['m', 'g', 'b']
 legend1 = {}
 legend2 = {}
 
+
 # Learn a frontier for outlier detection with several classifiers
 xx1, yy1 = np.meshgrid(np.linspace(-5, 10, 100), np.linspace(-5, 10, 100))
 xx2, yy2 = np.meshgrid(np.linspace(-1000, 6000, 1000), np.linspace(-1000, 6000, 1000))
-for i, (clf_name, clf) in enumerate(classifiers.items()):
-    plt.figure(1)
-    clf.fit(X1)
-    Z1 = clf.decision_function(np.c_[xx1.ravel(), yy1.ravel()])
-    Z1 = Z1.reshape(xx1.shape)
-    legend1[clf_name] = plt.contour(
-        xx1, yy1, Z1, levels=[0], linewidths=2, colors=colors[i])
-    plt.figure(2)
-    clf.fit(X2)
-    Z2 = clf.decision_function(np.c_[xx2.ravel(), yy2.ravel()])
-    Z2 = Z2.reshape(xx2.shape)
-    
-    legend2[clf_name] = plt.contour(
-        xx2, yy2, Z2, levels=[0], linewidths=2, colors=colors[i])
+with open('Data/write.txt','wb') as writefile:
+  for i, (clf_name, clf) in enumerate(classifiers.items()):
+      plt.figure(1)
+      clf.fit(X1)
+      Z1 = clf.decision_function(np.c_[xx1.ravel(), yy1.ravel()])
+      writefile.write(clf_name)
+      writefile.write("Decision Function: \n" + Z1)
+      Z1 = Z1.reshape(xx1.shape)
+      writefile.write("Reshape: \n" + Z1)
+      legend1[clf_name] = plt.contour(
+          xx1, yy1, Z1, levels=[0], linewidths=2, colors=colors[i])
+      plt.figure(2)
+      clf.fit(X2)
+      Z2 = clf.decision_function(np.c_[xx2.ravel(), yy2.ravel()])
+      Z2 = Z2.reshape(xx2.shape)
+      
+      legend2[clf_name] = plt.contour(
+          xx2, yy2, Z2, levels=[0], linewidths=2, colors=colors[i])
 
-legend1_values_list = list( legend1.values() )
-legend1_keys_list = list( legend1.keys() )
+  legend1_values_list = list( legend1.values() )
+  legend1_keys_list = list( legend1.keys() )
 
-# Plot the results (= shape of the data points cloud)
-plt.figure(1)  # two clusters
-plt.title("Outlier detection uplink/duration vs downlink/duration")
-plt.scatter(X1[:, 0], X1[:, 1], color='black')
-plt.xlim((xx1.min(), xx1.max()))
-plt.ylim((yy1.min(), yy1.max()))
+  # Plot the results (= shape of the data points cloud)
+  plt.figure(1)  # two clusters
+  plt.title("Outlier detection uplink/duration vs downlink/duration")
+  plt.scatter(X1[:, 0], X1[:, 1], color='black')
+  plt.xlim((xx1.min(), xx1.max()))
+  plt.ylim((yy1.min(), yy1.max()))
 
-plt.legend((legend1_values_list[0].collections[0],
-            legend1_values_list[1].collections[0],
-            legend1_values_list[2].collections[0]),
-           (legend1_keys_list[0], legend1_keys_list[1], legend1_keys_list[2]),
-           loc="upper center",
-           prop=matplotlib.font_manager.FontProperties(size=12))
-plt.ylabel("Uplink/Duration [byte/s]")
-plt.xlabel("Downlink/Duration [byte/s]")
+  plt.legend((legend1_values_list[0].collections[0],
+              legend1_values_list[1].collections[0],
+              legend1_values_list[2].collections[0]),
+             (legend1_keys_list[0], legend1_keys_list[1], legend1_keys_list[2]),
+             loc="upper center",
+             prop=matplotlib.font_manager.FontProperties(size=12))
+  plt.ylabel("Uplink/Duration [byte/s]")
+  plt.xlabel("Downlink/Duration [byte/s]")
 
-plt.savefig("../rapport/Pictures/scaleUpDivDurVSDownDivDur.png")
+  plt.savefig("../rapport/Pictures/scaleUpDivDurVSDownDivDur.png")
 
-legend2_values_list = list( legend2.values() )
-legend2_keys_list = list( legend2.keys() )
+  legend2_values_list = list( legend2.values() )
+  legend2_keys_list = list( legend2.keys() )
 
-plt.figure(2)  # "banana" shape
-plt.title("Outlier detection uplink/duration vs downlink/duration")
-plt.scatter(X2[:, 0], X2[:, 1], color='black')
-plt.xlim((-500, 2000))
-plt.ylim((-500, 2000))
+  plt.figure(2)  # "banana" shape
+  plt.title("Outlier detection uplink/duration vs downlink/duration")
+  plt.scatter(X2[:, 0], X2[:, 1], color='black')
+  plt.xlim((-500, 2000))
+  plt.ylim((-500, 2000))
 
-plt.legend((legend2_values_list[0].collections[0],
-            legend2_values_list[1].collections[0],
-            legend2_values_list[2].collections[0]),
-           (legend2_keys_list[0], legend2_keys_list[1], legend2_keys_list[2]),
-           loc="upper center",
-           prop=matplotlib.font_manager.FontProperties(size=12))
-plt.ylabel("Uplink/Duration [byte/s]")
-plt.xlabel("Downlink/Duration [byte/s]")
+  plt.legend((legend2_values_list[0].collections[0],
+              legend2_values_list[1].collections[0],
+              legend2_values_list[2].collections[0]),
+             (legend2_keys_list[0], legend2_keys_list[1], legend2_keys_list[2]),
+             loc="upper center",
+             prop=matplotlib.font_manager.FontProperties(size=12))
+  plt.ylabel("Uplink/Duration [byte/s]")
+  plt.xlabel("Downlink/Duration [byte/s]")
 
-plt.savefig("../Rapport/Pictures/unscaledUpDivDurVSDownDivDur.png")
-print time.time() - starttime
-plt.show()
+  plt.savefig("../Rapport/Pictures/unscaledUpDivDurVSDownDivDur.png")
+  print time.time() - starttime
+  plt.show()
