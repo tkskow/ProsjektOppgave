@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  8 DEC 2015 16:16
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  9 DEC 2015 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1563,7 +1563,45 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count319
 \c@blind@pangramcount=\count320
 \c@blind@pangrammax=\count321
-) (./glossary.tex)
+)
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use t
+he caption package interfaces in order to configure your captions. .
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen204
+\captionmargin@=\dimen205
+\captionwidth=\dimen206
+\caption@tempdima=\dimen207
+\caption@indent=\dimen208
+\caption@parindent=\dimen209
+\caption@hangindent=\dimen210
+)
+\c@ContinuedFloat=\count322
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+\c@subfigure=\count323
+\c@subtable=\count324
+)
+(./glossary.tex)
 \glo@main@file=\write5
 \openout5 = `main.glo'.
 
@@ -1572,10 +1610,10 @@ Package glossaries Info: Writing glossary file main.glo on input line 22.
 \openout6 = `main.acn'.
 
 Package glossaries Info: Writing glossary file main.acn on input line 22.
-
-(./main.aux (./abstract_english.aux) (./preface.aux) (./dns_intro.aux)
-(./dns_tunneling.aux) (./dns_detection.aux) (./machine_learning.aux)
-(./results.aux) (./conclusion.aux) (./parser_program.aux))
+ (./main.aux (./abstract_english.aux) (./preface.aux)
+(./dns_intro.aux) (./dns_tunneling.aux) (./dns_detection.aux)
+(./machine_learning.aux) (./results.aux) (./conclusion.aux)
+(./parser_program.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -1592,26 +1630,24 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen204
+\scratchcounter=\count325
+\scratchdimen=\dimen211
 \scratchbox=\box72
-\nofMPsegments=\count323
-\nofMParguments=\count324
+\nofMPsegments=\count326
+\nofMParguments=\count327
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen205
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen212
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
 \everyMPtoPDFconversion=\toks60
 )
 LaTeX Info: Redefining \microtypecontext on input line 24.
@@ -1637,7 +1673,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count328
+\c@section@level=\count331
 )
 Redoing nameref's sectioning
 Redoing nameref's label
@@ -1664,9 +1700,11 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count329
+\c@lstlisting=\count332
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 
-<./figs/ntnu-logo.pdf, id=88, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=96, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1717,9 +1755,9 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 
 ] (./main.toc) [7]
-[8
+[8] (./main.lof) [9
 
-] (./main.lof) [9] [10
+] [10
 
 ] (./main.lot) [11] [12
 
@@ -1747,7 +1785,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-<figs/namespace_example.png, id=214, 559.08875pt x 386.44376pt>
+
+Package caption Warning: \label without proper \caption on input line 11.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:namespace' on page 1 undefined on input line 6.
+
+<figs/namespace_example.png, id=236, 559.08875pt x 386.44376pt>
 File: figs/namespace_example.png Graphic file (type png)
 
 <use figs/namespace_example.png>
@@ -1756,20 +1801,8 @@ Package pdftex.def Info: figs/namespace_example.png used on input line 10.
  [1
 
 
-] [2pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
-1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.62 W
-      hen a request goes through \Gls{dns} it starts in the root zone, where...
- <./figs/namespace_example.png>]) [3pdfTeX warning (ext4): destination with the
- same identifier (name{table.1.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.79 \include{dns_intro}
-                        ]
+] [2 <./figs/namespace_example.png>])
+[3]
 \openout2 = `dns_tunneling.aux'.
 
  (./dns_tunneling.tex [4
@@ -1779,20 +1812,20 @@ l.79 \include{dns_intro}
 ]) [5]
 \openout2 = `dns_detection.aux'.
 
- (./dns_detection.tex
-[6
+ (./dns_detection.tex [6
 
 
 
 ]) [7]
 \openout2 = `machine_learning.aux'.
 
- (./machine_learning.tex [8
+
+(./machine_learning.tex [8
 
 
 
 ]
-<figs/anomaly_example.png, id=296, 610.28pt x 512.91624pt>
+<figs/anomaly_example.png, id=318, 610.28pt x 512.91624pt>
 File: figs/anomaly_example.png Graphic file (type png)
 
 <use figs/anomaly_example.png>
@@ -1802,39 +1835,92 @@ Package pdftex.def Info: figs/anomaly_example.png used on input line 16.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9])
-[10pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.82 \include{machine_learning}
-                                <./figs/anomaly_example.png>]
+[10 <./figs/anomaly_example.png>]
 \openout2 = `results.aux'.
 
- (./results.tex)
-[11
+ (./results.tex
+
+Package natbib Warning: Citation `manevitz2002one' on page 11 undefined on inpu
+t line 14.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
 
 
 
 ]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 22.
+
+<figs/scaleUpVSDown.png, id=348, 578.16pt x 433.62pt>
+File: figs/scaleUpVSDown.png Graphic file (type png)
+
+<use figs/scaleUpVSDown.png>
+Package pdftex.def Info: figs/scaleUpVSDown.png used on input line 37.
+(pdftex.def)             Requested size: 161.8837pt x 121.41277pt.
+
+Overfull \hbox (16.28592pt too wide) in paragraph at lines 37--38
+ [][] 
+ []
+
+<figs/unscaledUpVSDown.png, id=350, 578.16pt x 433.62pt>
+File: figs/unscaledUpVSDown.png Graphic file (type png)
+
+<use figs/unscaledUpVSDown.png>
+Package pdftex.def Info: figs/unscaledUpVSDown.png used on input line 43.
+(pdftex.def)             Requested size: 161.8837pt x 121.41277pt.
+
+Overfull \hbox (16.28592pt too wide) in paragraph at lines 43--44
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `fig:updurAndspeed' on page 12 undefined on input line
+ 57.
+
+[12 <./figs/scaleUpVSDown.png> <./figs/unscaledUpVSDown.png>]
+<figs/scaleUpVSDur.png, id=369, 578.16pt x 433.62pt>
+File: figs/scaleUpVSDur.png Graphic file (type png)
+
+<use figs/scaleUpVSDur.png>
+Package pdftex.def Info: figs/scaleUpVSDur.png used on input line 62.
+(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+
+<figs/scaleUpDivDurVSDownDivDur.png, id=370, 578.16pt x 433.62pt>
+File: figs/scaleUpDivDurVSDownDivDur.png Graphic file (type png)
+
+<use figs/scaleUpDivDurVSDownDivDur.png>
+Package pdftex.def Info: figs/scaleUpDivDurVSDownDivDur.png used on input line 
+70.
+(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./figs/scaleUpVSDur.png>] [14 <./figs/scaleUpDivDurVSDownDivDur.png>]
 \openout2 = `conclusion.aux'.
 
- (./conclusion.tex [12
+
+(./conclusion.tex) [15
 
 
 
-]) [13] (./main.bbl [14
+] (./main.bbl [16
 
 
 ]
 bibitemlist
-) [15]
+) [17]
 \openout2 = `parser_program.aux'.
 
- (./parser_program.tex [16
+ (./parser_program.tex [18
 
 
-]) [17]
+]) [19]
+
+Package natbib Warning: There were undefined citations.
+
 \tf@toc=\write8
 \openout8 = `main.toc'.
 
@@ -1849,37 +1935,41 @@ bibitemlist
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
- (./main.aux (./abstract_english.aux)
-(./preface.aux) (./dns_intro.aux) (./dns_tunneling.aux) (./dns_detection.aux)
-(./machine_learning.aux) (./results.aux) (./conclusion.aux)
-(./parser_program.aux))
+(./main.aux (./abstract_english.aux) (./preface.aux) (./dns_intro.aux)
+(./dns_tunneling.aux) (./dns_detection.aux) (./machine_learning.aux)
+(./results.aux) (./conclusion.aux) (./parser_program.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ABC08058C9C9DE28C80BADE739E92A2F;1140.
+(rerunfilecheck)             Checksum: EA728F7722978EF36CD46E8C7B837CB0;1269.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
  ) 
 Here is how much of TeX's memory you used:
- 21884 strings out of 493304
- 320253 string characters out of 6139870
- 582994 words of memory out of 5000000
- 24665 multiletter control sequences out of 15000+600000
- 81568 words of font info for 107 fonts, out of 8000000 for 9000
+ 23007 strings out of 493304
+ 341106 string characters out of 6139870
+ 605089 words of memory out of 5000000
+ 25757 multiletter control sequences out of 15000+600000
+ 84813 words of font info for 111 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 58i,13n,48p,1753b,572s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,13n,92p,1753b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share
 /texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm
-/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (33 pages, 346652 bytes).
+/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf
+/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></us
+r/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/pu
+blic/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
+hare/texmf/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (35 pages, 611346 bytes).
 PDF statistics:
- 411 PDF objects out of 1000 (max. 8388607)
- 354 compressed objects within 4 object streams
- 73 named destinations out of 1000 (max. 500000)
- 19640 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 20188 words of extra memory for PDF output out of 20736 (max. 10000000)
 
