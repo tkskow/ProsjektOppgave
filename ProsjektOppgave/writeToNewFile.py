@@ -209,4 +209,4 @@ with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
 	#restOfDnsCalls(spamreader)
 	#smallSetToTest(spamreader)
 	#imsiOnlyOnce()
-	lengthOfFiles()
+	#lengthOfFiles()

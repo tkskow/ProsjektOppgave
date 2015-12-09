@@ -14,8 +14,8 @@ with open('allDnsCalls.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
-    one = float(row[2])
-    two = float(row[3])
+    one = float(row[4])
+    two = float(row[5])
    
     temp.append([one,two])
 
@@ -27,10 +27,10 @@ with open('allDnsCalls.csv','rb') as csvfile:
 
 classifiers = {
     "Empirical Covariance": EllipticEnvelope(support_fraction=1.,
-                                             contamination=0.20),
+                                             contamination=0.16),
     "Robust Covariance (Minimum Covariance Determinant)":
-    EllipticEnvelope(contamination=0.20),
-    "OCSVM": OneClassSVM(nu=0.20, gamma=0.05)}
+    EllipticEnvelope(contamination=0.16),
+    "OCSVM": OneClassSVM(nu=0.16, gamma=0.05)}
 colors = ['m', 'g', 'b']
 legend1 = {}
 legend2 = {}
@@ -49,8 +49,7 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
     clf.fit(X2)
     Z2 = clf.decision_function(np.c_[xx2.ravel(), yy2.ravel()])
     Z2 = Z2.reshape(xx2.shape)
-    print clf.decision_function(np.c_[xx2.ravel(), yy2.ravel()])
-    print Z2
+    
     legend2[clf_name] = plt.contour(
         xx2, yy2, Z2, levels=[0], linewidths=2, colors=colors[i])
 
@@ -59,7 +58,7 @@ legend1_keys_list = list( legend1.keys() )
 
 # Plot the results (= shape of the data points cloud)
 plt.figure(1)  # two clusters
-plt.title("Outlier detection, Downlink vs duration")
+plt.title("Outlier detection uplink/duration vs downlink/duration")
 plt.scatter(X1[:, 0], X1[:, 1], color='black')
 plt.xlim((xx1.min(), xx1.max()))
 plt.ylim((yy1.min(), yy1.max()))
@@ -70,14 +69,16 @@ plt.legend((legend1_values_list[0].collections[0],
            (legend1_keys_list[0], legend1_keys_list[1], legend1_keys_list[2]),
            loc="upper center",
            prop=matplotlib.font_manager.FontProperties(size=12))
-plt.ylabel("Uplink/duration [bit/s]")
-plt.xlabel("Downlink/duration [bit/s]")
+plt.ylabel("Uplink/Duration [byte/s]")
+plt.xlabel("Downlink/Duration [byte/s]")
+
+plt.savefig("../rapport/Pictures/scaleUpDivDurVSDownDivDur.png")
 
 legend2_values_list = list( legend2.values() )
 legend2_keys_list = list( legend2.keys() )
 
 plt.figure(2)  # "banana" shape
-plt.title("Outlier detection Downlink vs duration")
+plt.title("Outlier detection uplink/duration vs downlink/duration")
 plt.scatter(X2[:, 0], X2[:, 1], color='black')
 plt.xlim((-500, 2000))
 plt.ylim((-500, 2000))
@@ -85,11 +86,12 @@ plt.ylim((-500, 2000))
 plt.legend((legend2_values_list[0].collections[0],
             legend2_values_list[1].collections[0],
             legend2_values_list[2].collections[0]),
-           (legend2_values_list[0], legend2_values_list[1], legend2_values_list[2]),
+           (legend2_keys_list[0], legend2_keys_list[1], legend2_keys_list[2]),
            loc="upper center",
            prop=matplotlib.font_manager.FontProperties(size=12))
-plt.ylabel("Uplink/duration [bit/s]")
-plt.xlabel("Downlink/duration [bit/s]")
+plt.ylabel("Uplink/Duration [byte/s]")
+plt.xlabel("Downlink/Duration [byte/s]")
 
+plt.savefig("../Rapport/Pictures/unscaledUpDivDurVSDownDivDur.png")
 print time.time() - starttime
 plt.show()
