@@ -18,7 +18,7 @@ with open('imsiOnlyOnce.csv','rb') as csvfile:
         temp.append([one,two])
 
     #print temp
-    #temp.sort(key=lambda x: x[1])
+    temp.sort(key=lambda x: x[1])
    # print temp
     X1 = np.array(temp)
     X1 = preprocessing.scale(X1)
@@ -30,8 +30,8 @@ outliers_fraction = 0.05
 
 # define two outlier detection tools to be compared
 classifiers = {
-    "One-Class SVM": svm.OneClassSVM(nu=0.16 * outliers_fraction + 0.05,
-                                     kernel="rbf", gamma=0.1),
+    "One-Class SVM": svm.OneClassSVM(nu=0.95 * outliers_fraction + 0.05,
+                                     kernel="rbf", gamma=0.5),
     "robust covariance estimator": EllipticEnvelope(contamination=.1)}
 
 # Compare given classifiers under given settings
