@@ -27,9 +27,9 @@ with open('restOfDnsCalls.csv','rb') as csvfile:
 
 classifiers = {
     "Empirical Covariance": EllipticEnvelope(support_fraction=1.,
-                                             contamination=0.16),
+                                             contamination=0.005),
     "Robust Covariance (Minimum Covariance Determinant)":
-    EllipticEnvelope(contamination=0.16),
+    EllipticEnvelope(contamination=0.005),
     "OCSVM": OneClassSVM(nu=0.005, gamma=0.05)}
 colors = ['m', 'g', 'b']
 legend1 = {}
@@ -37,7 +37,7 @@ legend2 = {}
 
 
 # Learn a frontier for outlier detection with several classifiers
-xx1, yy1 = np.meshgrid(np.linspace(-5, 10, 100), np.linspace(-5, 10, 100))
+xx1, yy1 = np.meshgrid(np.linspace(-5, 20, 200), np.linspace(-5, 20, 200))
 xx2, yy2 = np.meshgrid(np.linspace(-1000, 6000, 1000), np.linspace(-1000, 6000, 1000))
 with open('Data/write.txt','wb') as writefile:
   for i, (clf_name, clf) in enumerate(classifiers.items()):

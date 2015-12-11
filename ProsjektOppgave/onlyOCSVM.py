@@ -10,7 +10,7 @@ import time
 
 starttime = time.time()
 
-with open('allDnsCalls.csv','rb') as csvfile:
+with open('imsiOnlyOnce.csv','rb') as csvfile:
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:
@@ -26,9 +26,9 @@ with open('allDnsCalls.csv','rb') as csvfile:
 
 
 classifiers = {
+    #"linear nu = 0.005": OneClassSVM(kernel='linear', nu=0.005),
     "nu = 0.15": OneClassSVM(nu=0.15),
-    "nu = 0.25":
-    OneClassSVM(kernel='rbf', nu=0.25),
+    "nu = 0.25": OneClassSVM(kernel='rbf', nu=0.25),
     "nu = 0.05": OneClassSVM(nu=0.05),
     "nu = 0.005": OneClassSVM(nu=0.005)}
 colors = ['m', 'g', 'b', 'y']
@@ -68,12 +68,13 @@ plt.legend((legend1_values_list[0].collections[0],
             legend1_values_list[2].collections[0],
             legend1_values_list[3].collections[0]),
            (legend1_keys_list[0], legend1_keys_list[1], legend1_keys_list[2], legend1_keys_list[3]),
+           #(legend1_keys_list[0], legend1_keys_list[1]),
            loc="upper center",
            prop=matplotlib.font_manager.FontProperties(size=12))
 plt.ylabel("Uplink/Duration [byte/s]")
 plt.xlabel("Downlink/Duration [byte/s]")
 
-#plt.savefig("../rapport/Pictures/scaleUpDivDurVSDownDivDur.png")
+plt.savefig("../rapport/figs/imsiDifferentNu.png")
 
 print time.time() - starttime
 plt.show()

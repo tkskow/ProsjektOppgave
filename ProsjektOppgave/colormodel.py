@@ -30,8 +30,7 @@ outliers_fraction = 0.005
 
 # define two outlier detection tools to be compared
 classifiers = {
-    "One-Class SVM": svm.OneClassSVM(nu=0.005,
-                                     kernel="rbf", gamma=0.5),
+    "One-Class SVM": svm.OneClassSVM(nu=0.005, kernel="rbf"),
     "robust covariance estimator": EllipticEnvelope(contamination=.1)}
 
 # Compare given classifiers under given settings
@@ -65,26 +64,27 @@ for i, (clf_name, clf) in enumerate(classifiers.items()):
     #print Z, y_pred
     Z = Z.reshape(xx.shape)
     #print Z
-    subplot = plt.subplot(1, 2, i + 1)
-    subplot.set_title("Outlier detection")
-    subplot.contourf(xx, yy, Z, levels=np.linspace(Z.min(), threshold, 7),
+    plt.figure(i)
+
+    plt.title("Outlier detection")
+    plt.contourf(xx, yy, Z, levels=np.linspace(Z.min(), threshold, 7),
                      cmap=plt.cm.Blues_r)
-    a = subplot.contour(xx, yy, Z, levels=[threshold],
+    a = plt.contour(xx, yy, Z, levels=[threshold],
                         linewidths=2, colors='red')
-    subplot.contourf(xx, yy, Z, levels=[threshold, Z.max()],
+    plt.contourf(xx, yy, Z, levels=[threshold, Z.max()],
                      colors='orange')
-    c = subplot.scatter(X1[-n_outliers:, 0], X1[-n_outliers:, 1], c='black')
-    b = subplot.scatter(X1[:-n_outliers, 0], X1[:-n_outliers, 1], c='white')
+    c = plt.scatter(X1[-n_outliers:, 0], X1[-n_outliers:, 1], c='black')
+    b = plt.scatter(X1[:-n_outliers, 0], X1[:-n_outliers, 1], c='white')
     print len(X1[-n_outliers:]), len (X1[:-n_outliers])
-    subplot.axis('tight')
-    subplot.legend(
+    plt.axis('tight')
+    plt.legend(
         [a.collections[0], b, c],
-        #[a.collections[0], b],
         ['learned decision function', 'true inliers', 'true outliers'],
         prop=matplotlib.font_manager.FontProperties(size=11))
-    subplot.set_xlabel("%d. %s (errors: %d)" % (i + 1, clf_name, n_errors))
-    subplot.set_xlim((-2, 20))
-    subplot.set_ylim((-2, 20))
-plt.subplots_adjust(0.04, 0.1, 0.96, 0.94, 0.1, 0.26)
+    plt.xlabel("%d. %s (errors: %d)" % (i + 1, clf_name, n_errors))
+    plt.xlim((-2, 20))
+    plt.ylim((-2, 20))
+    plt.savefig("../rapport/figs/colormodel%s.png" %i)
+#plt.adjust(0.04, 0.1, 0.96, 0.94, 0.1, 0.26)
 
 plt.show()
