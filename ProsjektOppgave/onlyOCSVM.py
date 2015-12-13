@@ -20,9 +20,9 @@ with open('imsiOnlyOnce.csv','rb') as csvfile:
     temp.append([one,two])
 
   #temp.sort(key=lambda x: x[1])
-  X2 = np.array(temp)
+  X1 = np.array(temp)
 
-  X1 = preprocessing.scale(X2)
+  #X1 = preprocessing.scale(X2)
 
 
 classifiers = {
@@ -36,22 +36,17 @@ legend1 = {}
 
 
 # Learn a frontier for outlier detection with several classifiers
-xx1, yy1 = np.meshgrid(np.linspace(-5, 20, 200), np.linspace(-5, 20, 200))
-with open('Data/write.txt','wb') as writefile:
-  for i, (clf_name, clf) in enumerate(classifiers.items()):
-      plt.figure(1)
-      clf.fit(X1)
-      Z1 = clf.decision_function(np.c_[xx1.ravel(), yy1.ravel()])
-      print len(Z1), len(X1)
-      writefile.write(clf_name + "\n")
-      writefile.write("Decision Function: \n")
-      Z1.tofile(writefile,sep=", ")
-      Z1 = Z1.reshape(xx1.shape)
-      writefile.write("\n Reshape: \n")
-      Z1.tofile(writefile, sep=", ")
-      writefile.write("\n")
-      legend1[clf_name] = plt.contour(
-          xx1, yy1, Z1, levels=[0], linewidths=2, colors=colors[i])
+#xx1, yy1 = np.meshgrid(np.linspace(-5, 20, 200), np.linspace(-5, 20, 200))
+xx1, yy1 = np.meshgrid(np.linspace(-1000, 6000, 6000), np.linspace(-1000, 6000, 6000))
+#with open('Data/write.txt','wb') as writefile:
+for i, (clf_name, clf) in enumerate(classifiers.items()):
+    plt.figure(1)
+    clf.fit(X1)
+    Z1 = clf.decision_function(np.c_[xx1.ravel(), yy1.ravel()])
+    print len(Z1), len(X1)
+    Z1 = Z1.reshape(xx1.shape)
+    legend1[clf_name] = plt.contour(
+        xx1, yy1, Z1, levels=[0], linewidths=2, colors=colors[i])
       
 legend1_values_list = list( legend1.values() )
 legend1_keys_list = list( legend1.keys() )
@@ -74,7 +69,7 @@ plt.legend((legend1_values_list[0].collections[0],
 plt.ylabel("Uplink/Duration [byte/s]")
 plt.xlabel("Downlink/Duration [byte/s]")
 
-plt.savefig("../rapport/figs/imsiDifferentNu.png")
+#plt.savefig("../rapport/figs/imsiDifferentNu.png")
 
 print time.time() - starttime
 plt.show()

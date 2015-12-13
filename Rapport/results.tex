@@ -1,13 +1,11 @@
-\chapter{Results}
+\chapter{Preliminary Analysis}
 \label{chp:results}
 
-
-
-With scikit-learn was a program created in python that reads through the dataset and puts the \gls{dns} calls in to an ndarray, which is a N-dimensional array. This is to easier use to right values for the machine learning model. The program also cleans up the dataset by removing some of the fields, which for this project seemed unnecessary. I created multiple scripts for taking out different sections of the dataset, to see if there would be any difference. The code for the parser program is in \ref{chp:parserprogram}
+With scikit-learn a program was created in python that reads through the dataset and puts the \gls{dns} calls in to an ndarray, which is a N-dimensional array. This is to easier use to right values for the machine learning model. The program also cleans up the dataset by removing some of the fields. This is to make it easier to use the right values for the machine learning model. Multiple scripts were created for taking out different sections of the dataset, to see if there would be any difference. The base code for the parser program is in appendix \ref{chp:parserprogram}
 
 The main program read through a \texttt{csv} file, the dataset, and put each line as an array in a ndarray. N-dimensional array is a numpy class which is beneficial to use with scikit-learn. Further the ndarray was preprocessed to scale everything to a similar level. This level is set by calculating the mean and standard deviation of the ndarray. 
 
-The different classifiers are initiated with parameters that is changed to see what best fit the data. As the data is unlabeled, it is impossible to know how many of the observations are a part of a \gls{dns} tunnel if there is any. The classifiers must not have any inputs, but it will help making them more precise. In this project the contamination level, which is the level of data which is viewed as incorrect, was first calculated as the percentage of observations which was over average as a base. The value has been change up and down, but kept in the same area. 
+The different classifiers are initiated with parameters that are changed to see what best fit the data. As the data is unlabeled, it is impossible to know how many of the observations are a part of a \gls{dns} tunnel if there is any. The classifiers must not have any inputs, but it will help making them more precise. In this project the contamination level, which is the level of data which is viewed as incorrect, was first calculated as the percentage of observations which was over average as a base. The value has been changed up and down, but kept in the same area. 
 
 To be able to show the solutions and really understand what the machine learning model did, all of the experiments used two dimensions. The dimensions change between $downlink, uplink, duration, downlink/duration$ and $uplink/duration$. The values was not marked with any type, but based on network theory is duration set to the of length of conversation in seconds. The uplink and downlink is  the number of bytes transferred up to the server or downloaded from the server, respectively.
 

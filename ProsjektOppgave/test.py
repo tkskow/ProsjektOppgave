@@ -10,11 +10,8 @@ import time
 
 starttime = time.time()
 
-<<<<<<< HEAD
+
 with open('imsiOnlyOnce.csv','rb') as csvfile:
-=======
-with open('allDnsCalls.csv','rb') as csvfile:
->>>>>>> f892c60af4236563dbafde1c726e63a5e91b657d
   spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
   temp = []
   for row in spamreader:

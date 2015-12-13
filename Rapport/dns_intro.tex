@@ -3,7 +3,7 @@
 
 \section{Introduction}
 
-\Gls{dns} is an important part for the internet. It is a system of distributed databases which contains the information about all the domains. In the mid and late 1980s did the previous system, \texttt{HOST.TXT}, encounter problems \cite{Mockapetris:1988:DDN:52324.52338} which lead to the creation and standardizing called \Gls{dns}. Since that has the \Gls{dns} system been updated and configured many times. It needed to be able maintain a fast response time as the database grew larger, this was solved by using a hierarchical set up. This means that each server only has a limited information and sends the request to a new server until it reaches the correct server. It started with one root server, which has expanded to 13 today. The each layer of the hierarchy is called a zone, and it delegates the responsibility for underlying zones delimited by the \texttt{dot} in the request name \fref{fig:namespace}.
+\gls{dns} is an important part for the internet. It is a system of distributed databases which contains the information about all the domains. In the mid and late 1980s did the previous system \texttt{HOST.TXT} encounter problems \cite{Mockapetris:1988:DDN:52324.52338} which lead to the creation and standardisation of the so-called \gls{dns}. Since that has the \Gls{dns} system been updated and configured many times. It needed to be able to maintain a fast response time as the database grew larger. This was solved by using a hierarchical set up. This means that each server only has a limited information and sends the request to a new server until it reaches the correct server. It started with one root server, which has expanded to 13 today. Each layer of the hierarchy is called a zone, and it delegates the responsibility for underlying zones delimited by the \texttt{dot} in the request name. This is illustrated in \fref{fig:namespace}.
 
 \begin{figure}
 \centering
@@ -14,7 +14,7 @@
 
 
 \section{Structure}
-The data in the databases are called \Gls{rr} and contains the information about what the server do with the request. It has the following fields \cite{mockapetris1983domain}:
+The data in the databases are called \gls{rr} and contains the information about what the server do with the request. It has the following fields \cite{mockapetris1983domain}:
 \begin{itemize} 
 \item NAME -- the owner name of the record.
 \item TYPE -- what type of record this is, name-to-IP (A) or IP-to-name (PTR).
@@ -62,7 +62,7 @@ When a request goes through \Gls{dns} it starts in the root zone, where it sent 
 
 
 
-Normally a \Gls{dns} server in an enterprise does not send requests directly to the internet, but use an internal \Gls{dns} server instead. If you are the owner of the authoritative server for a domain, you can control the responses. This is what a \Gls{dns} tunnel exploits, which will be explained more in the next section. 
+Normally a \Gls{dns} server in an enterprise does not send requests directly to the internet, but use an internal \Gls{dns} server instead. If you are the owner of the authoritative server for a domain, you can control the responses. This is what a \Gls{dns} tunnel exploits, which will be explained in more details in the next section. 
 
 
 
