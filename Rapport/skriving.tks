@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/dns_intro.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/glossary.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/results.tex" bookmark3="0"/>
-    <document hasfocus="true" master="true" line="82" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/main.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/dns_detection.tex" bookmark3="0"/>
-    <document hasfocus="false" master="false" line="1" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/machine_learning.tex" bookmark3="0"/>
+    <document hasfocus="false" master="true" line="102" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/main.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="9" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/dns_intro.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="23" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/glossary.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="58" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/main.bib" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="56" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/results.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="29" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/parser_program.tex" bookmark3="0"/>
     <document hasfocus="false" master="false" line="10" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/dns_tunneling.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="7" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/dns_detection.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/machine_learning.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="1" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/abstract_english.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="4" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/preface.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="8" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/introduction.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="0" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/plot_program.tex" bookmark3="0"/>
+    <document hasfocus="false" master="false" line="4" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/conclusion.tex" bookmark3="0"/>
+    <document hasfocus="true" master="false" line="10" bookmark1="0" bookmark2="0" file="/home/tk/progging/Prosjekt/Egen/Rapport/prediction_program.tex" bookmark3="0"/>
 </TexmakerSession>
