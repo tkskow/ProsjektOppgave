@@ -1,0 +1,52 @@
+\chapter{Prediction program}
+\label{chp:predprogam}
+
+\begin{Verbatim}
+import numpy as np
+import csv
+from sklearn import preprocessing
+from sklearn import svm
+
+with open('trainset.csv','rb') as csvfile:
+	spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+	temp = []
+	for row in spamreader:
+		#append the wanted values to an ndarray and scale it
+		one = float(row[1])
+		two = float(row[2])
+		three = float(row[3])
+		temp.append([one,two,three])
+
+	data = np.array(temp)
+	data = preprocessing.scale(data)
+	
+	#initiate and train the model
+	oneSVM = svm.OneClassSVM(nu=0.005)
+	oneSVM.fit(data)
+
+
+with open('testset.csv','rb') as csvfile2:
+	spamreader = csv.reader(csvfile2, delimiter=',', quotechar='|')
+	temp = []
+	#get the wanted values from the testset into an ndarray and scale it
+	for row in spamreader:
+		row[4] = float(row[1])
+		row[5] = float(row[2])
+		three = float(row[3])
+		temp.append([one,two,three])
+
+	data = np.array(temp)
+	data = preprocessing.scale(data)
+
+	#run the test, returns a ndarray with 1 for inlier and -1 for outlier
+	prediction = oneSVM.predict(data)
+	
+	outlier = 0
+	inlier = 0
+	for x,i in enumerate(prediction):
+		if i < 0:
+			negative += 1
+		else:
+			positive += 1
+	print positive, negative
+\end{Verbatim}

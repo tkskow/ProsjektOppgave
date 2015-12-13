@@ -27,6 +27,11 @@ Paul~V Mockapetris.
 \newblock Domain names-concepts and facilities.
 \newblock 1987.
 
+\bibitem[MY02]{manevitz2002one}
+Larry~M Manevitz and Malik Yousef.
+\newblock One-class svms for document classification.
+\newblock {\em the Journal of machine Learning research}, 2:139--154, 2002.
+
 \bibitem[PVG{\etalchar{+}}11]{scikit-learn}
 F.~Pedregosa, G.~Varoquaux, A.~Gramfort, V.~Michel, B.~Thirion, O.~Grisel,
   M.~Blondel, P.~Prettenhofer, R.~Weiss, V.~Dubourg, J.~Vanderplas, A.~Passos,

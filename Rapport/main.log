@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  10 DEC 2015 12:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.20)  12 DEC 2015 17:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
+**main
 (./main.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
@@ -1564,6 +1564,18 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count320
 \c@blind@pangrammax=\count321
 )
+(/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count322
+\FV@InFile=\read2
+\FV@TabBox=\box72
+\c@FancyVerbLine=\count323
+\FV@StepNumber=\count324
+\FV@OutFile=\write5
+)
 
 Class memoir Warning: You are using the caption package with the memoir class. 
 To prepare we will now reset all captioning macros and configurations to kernel
@@ -1584,7 +1596,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen209
 \caption@hangindent=\dimen210
 )
-\c@ContinuedFloat=\count322
+\c@ContinuedFloat=\count325
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1598,59 +1610,62 @@ Package caption Info: wrapfig package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
-\c@subfigure=\count323
-\c@subtable=\count324
+\c@subfigure=\count326
+\c@subtable=\count327
 )
 (./glossary.tex)
-\glo@main@file=\write5
-\openout5 = `main.glo'.
+\glo@main@file=\write6
+\openout6 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 22.
-\glo@acronym@file=\write6
-\openout6 = `main.acn'.
+Package glossaries Info: Writing glossary file main.glo on input line 23.
+\glo@acronym@file=\write7
+\openout7 = `main.acn'.
 
-Package glossaries Info: Writing glossary file main.acn on input line 22.
+Package glossaries Info: Writing glossary file main.acn on input line 23.
  (./main.aux (./abstract_english.aux) (./preface.aux)
-(./dns_intro.aux) (./dns_tunneling.aux) (./dns_detection.aux)
-(./machine_learning.aux) (./results.aux) (./conclusion.aux)
-(./parser_program.aux))
+(./introduction.aux) (./dns_intro.aux) (./dns_tunneling.aux)
+(./dns_detection.aux) (./machine_learning.aux) (./results.aux)
+(./conclusion.aux) (./parser_program.aux) (./plot_program.aux)
+(./prediction_program.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
+\scratchcounter=\count328
 \scratchdimen=\dimen211
-\scratchbox=\box72
-\nofMPsegments=\count326
-\nofMParguments=\count327
+\scratchbox=\box73
+\nofMPsegments=\count329
+\nofMParguments=\count330
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count328
+\MPscratchCnt=\count331
 \MPscratchDim=\dimen212
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
+\MPnumerator=\count332
+\makeMPintoPDFobject=\count333
 \everyMPtoPDFconversion=\toks60
 )
-LaTeX Info: Redefining \microtypecontext on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 25.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1664,8 +1679,8 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring ON on input line 24.
+\AtBeginShipoutBox=\box74
+Package hyperref Info: Link coloring ON on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1673,17 +1688,17 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count331
+\c@section@level=\count334
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 24.
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 (./main.out) (./main.out)
-\@outlinefile=\write7
-\openout7 = `main.out'.
+\@outlinefile=\write8
+\openout8 = `main.out'.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -1700,17 +1715,17 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\c@lstlisting=\count332
+\c@lstlisting=\count335
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
-<./figs/ntnu-logo.pdf, id=96, 241.4922pt x 52.79724pt>
+<./figs/ntnu-logo.pdf, id=124, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
-Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 30.
+Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 31.
 (pdftex.def)             Requested size: 170.71652pt x 37.32436pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 30.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 31.
  (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1718,14 +1733,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 30
+LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 31
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11.49994> on input line 30.
+(Font)              <11.49994> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.04991> on input line 30.
+(Font)              <8.04991> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.74997> on input line 30.
+(Font)              <5.74997> on input line 31.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1742,19 +1757,20 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout2 = `abstract_english.aux'.
 
 
-(./abstract_english.tex [3
+(./abstract_english.tex) [3
 
-]) [4]
+] [4
+
+
+]
 \openout2 = `preface.aux'.
 
  (./preface.tex) [5
 
-
-
 ] [6
 
 
-] (./main.toc) [7]
+] (./main.toc [7])
 [8] (./main.lof) [9
 
 ] [10
@@ -1772,9 +1788,19 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ] [16
 
 ]
+\openout2 = `introduction.aux'.
+
+ (./introduction.tex) [1
+
+
+]
 \openout2 = `dns_intro.aux'.
 
- (./dns_intro.tex
+ (./dns_intro.tex [2
+
+
+
+]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 6.
 
 (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
@@ -1785,68 +1811,53 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-
-Package caption Warning: \label without proper \caption on input line 11.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:namespace' on page 1 undefined on input line 6.
-
-<figs/namespace_example.png, id=236, 559.08875pt x 386.44376pt>
+<figs/namespace_example.png, id=303, 559.08875pt x 386.44376pt>
 File: figs/namespace_example.png Graphic file (type png)
 
 <use figs/namespace_example.png>
 Package pdftex.def Info: figs/namespace_example.png used on input line 10.
 (pdftex.def)             Requested size: 279.54369pt x 193.2214pt.
- [1
-
-
-] [2 <./figs/namespace_example.png>])
-[3]
+ [3] [4 <./figs/namespace_example.png>])
+[5]
 \openout2 = `dns_tunneling.aux'.
 
- (./dns_tunneling.tex [4
-
-
-
-]) [5]
-\openout2 = `dns_detection.aux'.
-
- (./dns_detection.tex [6
+ (./dns_tunneling.tex [6
 
 
 
 ]) [7]
+\openout2 = `dns_detection.aux'.
+
+ (./dns_detection.tex [8
+
+
+
+]) [9]
 \openout2 = `machine_learning.aux'.
 
 
-(./machine_learning.tex [8
+(./machine_learning.tex [10
 
 
 
 ]
-<figs/anomaly_example.png, id=318, 610.28pt x 512.91624pt>
+<figs/anomaly_example.png, id=385, 610.28pt x 512.91624pt>
 File: figs/anomaly_example.png Graphic file (type png)
 
 <use figs/anomaly_example.png>
 Package pdftex.def Info: figs/anomaly_example.png used on input line 16.
 (pdftex.def)             Requested size: 183.0854pt x 153.87605pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3536) has occurred while \output is active []
 
- [9])
-[10 <./figs/anomaly_example.png>]
+ [11])
+[12 <./figs/anomaly_example.png>]
 \openout2 = `results.aux'.
 
  (./results.tex
-
-Package natbib Warning: Citation `manevitz2002one' on page 11 undefined on inpu
-t line 14.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11
+ [13
 
 
 
@@ -1854,7 +1865,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 22.
 
-<figs/scaleUpVSDown.png, id=348, 578.16pt x 433.62pt>
+<figs/scaleUpVSDown.png, id=416, 578.16pt x 433.62pt>
 File: figs/scaleUpVSDown.png Graphic file (type png)
 
 <use figs/scaleUpVSDown.png>
@@ -1865,7 +1876,7 @@ Overfull \hbox (16.28592pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<figs/unscaledUpVSDown.png, id=350, 578.16pt x 433.62pt>
+<figs/unscaledUpVSDown.png, id=418, 578.16pt x 433.62pt>
 File: figs/unscaledUpVSDown.png Graphic file (type png)
 
 <use figs/unscaledUpVSDown.png>
@@ -1876,100 +1887,132 @@ Overfull \hbox (16.28592pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:updurAndspeed' on page 12 undefined on input line
- 57.
-
-[12 <./figs/scaleUpVSDown.png> <./figs/unscaledUpVSDown.png>]
-<figs/scaleUpVSDur.png, id=369, 578.16pt x 433.62pt>
+[14 <./figs/scaleUpVSDown.png> <./figs/unscaledUpVSDown.png>]
+<figs/scaleUpVSDur.png, id=438, 578.16pt x 433.62pt>
 File: figs/scaleUpVSDur.png Graphic file (type png)
 
 <use figs/scaleUpVSDur.png>
 Package pdftex.def Info: figs/scaleUpVSDur.png used on input line 62.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
 
-<figs/scaleUpDivDurVSDownDivDur.png, id=370, 578.16pt x 433.62pt>
+<figs/scaleUpDivDurVSDownDivDur.png, id=439, 578.16pt x 433.62pt>
 File: figs/scaleUpDivDurVSDownDivDur.png Graphic file (type png)
 
 <use figs/scaleUpDivDurVSDownDivDur.png>
 Package pdftex.def Info: figs/scaleUpDivDurVSDownDivDur.png used on input line 
 70.
 (pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
-)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./figs/scaleUpVSDur.png>] [14 <./figs/scaleUpDivDurVSDownDivDur.png>]
+ [15 <./figs/scaleUpVSDur.png>] <figs/differentNu.png, id=448, 578.16pt x 433.6
+2pt>
+File: figs/differentNu.png Graphic file (type png)
+
+<use figs/differentNu.png>
+Package pdftex.def Info: figs/differentNu.png used on input line 81.
+(pdftex.def)             Requested size: 346.89867pt x 260.17401pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./figs/scaleUpDivDurVSDownDivDur.png>]
+Overfull \hbox (18.6381pt too wide) in paragraph at lines 93--104
+ [][] 
+ []
+
+) [17 <./figs/differentNu.png>] [18]
 \openout2 = `conclusion.aux'.
 
-
-(./conclusion.tex) [15
-
+ (./conclusion.tex) [19
 
 
-] (./main.bbl [16
+
+] (./main.bbl
+[20
 
 
 ]
 bibitemlist
-) [17]
+) [21]
 \openout2 = `parser_program.aux'.
 
- (./parser_program.tex [18
+ (./parser_program.tex [22
 
 
-]) [19]
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package natbib Warning: There were undefined citations.
+ [23])
+[24]
+\openout2 = `plot_program.aux'.
 
-\tf@toc=\write8
-\openout8 = `main.toc'.
+ (./plot_program.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-\tf@lof=\write9
-\openout9 = `main.lof'.
+ [25
 
-\tf@lot=\write10
-\openout10 = `main.lot'.
 
-\tf@loa=\write11
-\openout11 = `main.loa'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
-(./main.aux (./abstract_english.aux) (./preface.aux) (./dns_intro.aux)
-(./dns_tunneling.aux) (./dns_detection.aux) (./machine_learning.aux)
-(./results.aux) (./conclusion.aux) (./parser_program.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+])
+[26]
+\openout2 = `prediction_program.aux'.
+
+ (./prediction_program.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [27
+
+
+
+])
+[28]
+\tf@toc=\write9
+\openout9 = `main.toc'.
+
+\tf@lof=\write10
+\openout10 = `main.lof'.
+
+\tf@lot=\write11
+\openout11 = `main.lot'.
+
+\tf@loa=\write12
+\openout12 = `main.loa'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
+ (./main.aux (./abstract_english.aux) (./preface.aux) (./introduction.aux)
+(./dns_intro.aux) (./dns_tunneling.aux) (./dns_detection.aux)
+(./machine_learning.aux) (./results.aux) (./conclusion.aux)
+(./parser_program.aux) (./plot_program.aux) (./prediction_program.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EA728F7722978EF36CD46E8C7B837CB0;1269.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
+(rerunfilecheck)             Checksum: F10BD6EC9E7EE14916BC51ADED692074;1649.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 105.
  ) 
 Here is how much of TeX's memory you used:
- 23009 strings out of 493304
- 341128 string characters out of 6139870
- 605089 words of memory out of 5000000
- 25757 multiletter control sequences out of 15000+600000
- 84896 words of font info for 112 fonts, out of 8000000 for 9000
+ 23469 strings out of 493304
+ 348278 string characters out of 6139870
+ 618541 words of memory out of 5000000
+ 26165 multiletter control sequences out of 15000+600000
+ 85145 words of font info for 115 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 58i,13n,92p,1753b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,13n,92p,1749b,638s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}</usr/share
 /texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm
 /lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx9.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/t
-ype1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></us
-r/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/pu
-blic/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/s
-hare/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (35 pages, 611690 bytes).
+/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/
+type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr
+/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/pub
+lic/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmtt10.pfb>
+Output written on main.pdf (44 pages, 679242 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 401 compressed objects within 5 object streams
- 82 named destinations out of 1000 (max. 500000)
- 20188 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 595 PDF objects out of 1000 (max. 8388607)
+ 512 compressed objects within 6 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 20249 words of extra memory for PDF output out of 20736 (max. 10000000)
 

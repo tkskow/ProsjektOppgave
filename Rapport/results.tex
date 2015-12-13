@@ -54,7 +54,7 @@ As seen in \fref{fig:scaledVSUnscaledUpDown} the scaled and unscaled graphs bear
 The results were better for \gls{ocsvm} with scaled data, while the covariance calculations worked better with the unscaled. The unscaled data spreads so far out that it is hard to see all the data points, while the scaled data is more compact giving a better overview. The ellipses on the figures is the learned decision of the classifier model. Meaning that inside the ellipses is the area where an observation is considered normal. Since the \gls{ocsvm} is the main focus, scaled data was used for the rest of the experiments.
 
 \section{Different axes}
-Next up was looking which values would be best for the axes to represent the data. In \fref{fig:scaledVSUnscaledUpDown} the fields of the dataset used were \texttt{uplink} and \texttt{downlink}. This were the first thoughts of finding irregularities, as mentioned in chapter \ref{chp:dns_detection} this is a volume analysis comparing total volume from a user in one \gls{dns} session. \fref{fig:updurAndspeed} shows graphs where other fields of the data set were used as input for the model. In \fref{fig:scaledUpDur} the size of the uploaded data were compared to the time the session were used, this shows that there are a number of users in the same area which the model learn as the normal area, which in scale is around 0. The result were similar when changing uplink with downlink. There are users uploading and downloading lots of data in short time, this lead to the idea of introducing a new field to the dataset. Combining the discoveries from \fref{fig:scaledUpDown} and \fref{fig:scaledUpDur}, by seeing how much data where uploaded or downloaded during a session. This is depicted in \fref{fig:scaledUpDownDivDur}. In this graph it is possible to see that the observation is even more clustered. This seemed like a good representation. 
+Next up was looking which values would be best for the axes to represent the data. In \fref{fig:scaledVSUnscaledUpDown} the fields of the dataset used were \texttt{uplink} and \texttt{downlink}. This was the first thoughts of finding irregularities, as mentioned in chapter \ref{chp:dns_detection} is this a volume analysis comparing total volume from a user in one \gls{dns} session. The experiment were then ran with different values to see the difference. In \fref{fig:scaledUpDur} the size of the uploaded data were compared to the time the session were used, this shows that there are a number of users in the same area which the model learn as the normal area, which in scale is around 0. The result were similar when changing uplink with downlink. There are users uploading and downloading lots of data in short time, this lead to the idea of introducing a new field to the dataset. Combining the discoveries from \fref{fig:scaledUpDown} and \fref{fig:scaledUpDur}, by seeing how much data where uploaded or downloaded during a session. This is depicted in \fref{fig:scaledUpDownDivDur}. In this graph it is possible to see that the observation is even more clustered. This seemed like a good representation. 
 
 
 \begin{figure}
@@ -74,4 +74,32 @@ Next up was looking which values would be best for the axes to represent the dat
 
 \section{Different parameters}
 The fields of the dataset is, as mentioned earlier, not the only variable when finding the best way for a model to fit to the dataset. The machine learning model has parameters that is given when instantiated. For \gls{ocsvm} is it possible to set what kind of kernel it should use and the number of training errors among others. \texttt{Kernel} is the function the model should use. The number of training errors, \texttt{nu} in scikit-learn, is the upper bound fraction of outliers in the training set, and the lower bound of training examples used as support vectors. For this project the kernels used where \texttt{rbf} and \texttt{linear} where rbf is the one used in the graphs so far. 
-The nu was first set to $0.15$ which was calculated as the fraction of observations above average, this has been changed to see how it affect the learned decision. In $ $ $ $ do you see how changing nu is affecting the model. It is clear to see that in this dataset there are a low fraction of observations that does not fit the model. Using the linear kernel the model tries to find a linear line it can draw where all observations on one side is correct observations and on the other side is outliers. This is seen in $ $ $ $ $ $. It was worth a try, but it seems that rbf if the best kernel. 
+The nu was first set to $0.15$ which was calculated as the fraction of observations above average, this has been changed to see how it affect the learned decision. In \ref{fig:differentNu} do you see how changing nu is affecting the model. It is clear to see that in this dataset there are a low fraction of observations that does not fit the model. Using the linear kernel the model tries to find a linear line it can draw where all observations on one side is correct observations and on the other side is outliers. This is seen in $ $ $ $ $ $. It was worth a try, but it seems that \texttt{rbf} if the best kernel. 
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{figs/differentNu.png}
+\caption{Changing the nu parameter of the \gls{ocsvm}}
+\label{fig:differentNu}
+\end{figure}
+
+
+
+\section{Predicting}
+The dataset were also ran through a predicting program where 75 percent of the dataset were used to train the classifier and the last 25 percent were used to test it. Which means that the model tried to give around 5000 observations the correct label. Here the classifier had no problems using more then two features, so the classifier were trained with different features to see how it worked. As seen in table \ref{tab:predicting} is it seen that no matter the features are the predictions quite similar. The one thing to notice is that the more feature used is resulting in a little higher number of outliers, but the change from 33 to 38 out of 5167, is only 0.1 percent change. With $nu = 0.16$ is the percent of outliers around 10 percent, while with $nu = 0.005$ is it only 0.6 percent. \gls{ocsvm} with linear kernel were also tested with prediction but were not nearly as accurate as the rbf kernel. 
+
+\begin{table}
+\centering
+\begin{tabular}[b]{|c|c|c|c|c|}
+\hline
+ & \multicolumn{2}{c}{nu = 0.16} & \multicolumn{2}{c}{nu = 0.005} \\ \hline
+Features & Outliers & Inliers & Ouliers & Inliers \\ \hline
+$Uplink, downlink$ & 438 & 4729 & 29 & 5138 \\ \hline
+$Uplink, duration$ & 557 & 4610 & 28 & 5139 \\ \hline
+$Downlink, duration$ & 579 & 4588 & 33 & 5134 \\ \hline
+$Uplink, downlink, duration$ & 568 & 4599 & 38 & 5129 \\ \hline
+$\frac{Uplink}{duration}, \frac{downlink}{duration }$ & 469 & 4698 & 26 & 5141 \\ \hline
+$Uplink, downlink, duration, \frac{Uplink}{duration}, \frac{downlink}{duration }$ & 613 & 4554 & 36 & 5131 \\ \hline
+\end{tabular}
+\caption{\label{tab:predicting} Number of observations classified as outliers and inliers with different features and nu value} 
+\end{table} 

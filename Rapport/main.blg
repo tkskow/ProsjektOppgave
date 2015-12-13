@@ -3,6 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: abstract_english.aux
 A level-1 auxiliary file: preface.aux
+A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: dns_intro.aux
 A level-1 auxiliary file: dns_tunneling.aux
 A level-1 auxiliary file: dns_detection.aux
@@ -11,48 +12,50 @@ A level-1 auxiliary file: results.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: alpha.bst
 A level-1 auxiliary file: parser_program.aux
+A level-1 auxiliary file: plot_program.aux
+A level-1 auxiliary file: prediction_program.aux
 Database file #1: main.bib
 Warning--empty journal in mockapetris1983domain
 Warning--empty journal in mockapetris1987domain
-You've used 6 entries,
+You've used 7 entries,
             2543 wiz_defined-function locations,
-            602 strings with 5544 characters,
-and the built_in function-call counts, 2627 in all, are:
-= -- 251
-> -- 158
+            612 strings with 5751 characters,
+and the built_in function-call counts, 3036 in all, are:
+= -- 295
+> -- 177
 < -- 4
-+ -- 56
-- -- 56
-* -- 199
-:= -- 454
-add.period$ -- 19
-call.type$ -- 6
-change.case$ -- 48
-chr.to.int$ -- 6
-cite$ -- 8
-duplicate$ -- 96
-empty$ -- 159
-format.name$ -- 64
-if$ -- 515
++ -- 62
+- -- 62
+* -- 229
+:= -- 522
+add.period$ -- 22
+call.type$ -- 7
+change.case$ -- 54
+chr.to.int$ -- 7
+cite$ -- 9
+duplicate$ -- 110
+empty$ -- 188
+format.name$ -- 71
+if$ -- 597
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 6
-newline$ -- 34
-num.names$ -- 18
-pop$ -- 45
+missing$ -- 7
+newline$ -- 39
+num.names$ -- 21
+pop$ -- 48
 preamble$ -- 1
-purify$ -- 54
+purify$ -- 61
 quote$ -- 0
-skip$ -- 81
+skip$ -- 94
 stack$ -- 0
-substring$ -- 111
-swap$ -- 13
+substring$ -- 143
+swap$ -- 14
 text.length$ -- 4
 text.prefix$ -- 3
 top$ -- 0
-type$ -- 48
+type$ -- 56
 warning$ -- 2
-while$ -- 21
-width$ -- 7
-write$ -- 79
+while$ -- 26
+width$ -- 8
+write$ -- 92
 (There were 2 warnings)

@@ -1,2 +1,35 @@
 \chapter{Parser program}
 \label{chp:parserprogram}
+
+\begin{Verbatim}
+import csv
+
+def allDnsCalls(csvIn):
+	#opens the outputfile
+	with open('allDnsCalls.csv', 'wb') as writefile:
+		spamwriter = csv.writer(writefile, delimiter=',', quotechar='|')
+		for row in csvIn:
+			#Remove values though as unecessary for the experiment
+			row.pop(-1)
+			row.pop(-2)
+			row.pop(-2)
+			#9000 where the representing value for a DNS call
+			if row[0] == '9000':
+				row.pop(0)
+				#calculate uplink/duration and downlink/duration
+				if float(row[-1]) == 0:
+					bpsUp = row[1]
+					bpsDown = row[2]
+				else:
+					bpsUp+ = float(row[1])/float(row[-1])
+					bpsDown = float(row[2])/float(row[-1])
+				
+				row.append(bpsUp)
+				row.append(bpsDown)
+				spamwriter.writerow(row)
+
+#Opens the dataset file
+with open('ggsnSample-4Kristofer-hashIMSI.csv','rb') as csvfile:
+	spamreader = csv.reader(csvfile, delimiter=',', quotechar='|')
+	allDnsCalls(spamreader)
+\end{Verbatim}

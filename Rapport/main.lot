@@ -3,9 +3,13 @@
 \select@language {english}
 \select@language {english}
 \addvspace {10pt}
-\contentsline {table}{\numberline {1.1}{\ignorespaces Example of \gls {rr} for telenor.no\relax }}{3}{table.caption.7}
+\addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Example of \gls {rr} for telenor.no\relax }}{5}{table.caption.7}
 \addvspace {10pt}
 \addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Number of observations classified as outliers and inliers with different features and nu value\relax }}{18}{table.caption.13}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
