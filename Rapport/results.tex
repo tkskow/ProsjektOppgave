@@ -1,7 +1,22 @@
 \chapter{Preliminary Analysis}
 \label{chp:results}
 
+\section{Set up}
 With scikit-learn a program was created in python that reads through the dataset and puts the \gls{dns} calls in to an ndarray, which is a N-dimensional array. This is to easier use to right values for the machine learning model. The program also cleans up the dataset by removing some of the fields. This is to make it easier to use the right values for the machine learning model. Multiple scripts were created for taking out different sections of the dataset, to see if there would be any difference. The base code for the parser program is in appendix \ref{chp:parserprogram}
+
+The data used in was a GGSN data dump from Telenor. It was a \texttt{csv} file with the following fields:
+\begin{itemize}
+\item AnonymousAccessId - the service ID, 9000 is a \gls{dns} call
+\item IMSI - hash of the user IMSI
+\item Uplink - bytes uploaded
+\item Downlink - bytes downloaded
+\item ChangeDate - the date it was made
+\item ChangeTime - the time it of day
+\item CallDuration - length of call in seconds
+\item RatingGroup - what kind of rating the service has
+\end{itemize}
+
+When filtering out the \gls{dns} calls, is the data very diverse. The shortest calls are 0 s and the longest 7717 s. Similar is the uplink and downlink values. The lowest for both are 0 bytes and the highest are 203996 bytes on uplink and 374126 bytes on downlink. ChangeDate, changeTime and ratingGroup were the fields removed in this experiment. The IMSI were kept in with though of possibilities to indicate users, which will be talked about in chapter \ref{chp:conclusion}
 
 The main program read through a \texttt{csv} file, the dataset, and put each line as an array in a ndarray. N-dimensional array is a numpy class which is beneficial to use with scikit-learn. Further the ndarray was preprocessed to scale everything to a similar level. This level is set by calculating the mean and standard deviation of the ndarray. 
 
